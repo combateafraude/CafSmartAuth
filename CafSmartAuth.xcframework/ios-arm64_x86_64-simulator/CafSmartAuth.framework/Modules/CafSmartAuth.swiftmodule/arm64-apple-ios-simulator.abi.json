@@ -9476,14 +9476,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CafSmartAuth",
-                "printedName": "CafSmartAuth.CafSmartAuth",
-                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                "name": "CafSmartAuthSdk",
+                "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC0A2ACvp",
-            "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC0A2ACvp",
+            "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC0AA0abC3SdkCvp",
+            "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC0AA0abC3SdkCvp",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -9500,14 +9500,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CafSmartAuth",
-                    "printedName": "CafSmartAuth.CafSmartAuth",
-                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                    "name": "CafSmartAuthSdk",
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC0A2ACvg",
-                "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC0A2ACvg",
+                "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC0AA0abC3SdkCvg",
+                "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC0AA0abC3SdkCvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -9525,14 +9525,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "CafSmartAuth",
-                    "printedName": "CafSmartAuth.CafSmartAuth",
-                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                    "name": "CafSmartAuthSdk",
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC0A2ACvs",
-                "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC0A2ACvs",
+                "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC0AA0abC3SdkCvs",
+                "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC0AA0abC3SdkCvs",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -9550,8 +9550,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC0A2ACvM",
-                "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC0A2ACvM",
+                "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC0AA0abC3SdkCvM",
+                "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC0AA0abC3SdkCvM",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -10800,9 +10800,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CafSmartAuth",
-                "printedName": "CafSmartAuth.CafSmartAuth",
-                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                "name": "CafSmartAuthSdk",
+                "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
               },
               {
                 "kind": "TypeNominal",
@@ -10894,8 +10894,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC08personID8policyId8listenerAc2AC_S2SyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAK_SSALtAA0abC5ErrorOS2bGctcfc",
-            "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC08personID8policyId8listenerAc2AC_S2SyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAK_SSALtAA0abC5ErrorOS2bGctcfc",
+            "usr": "s:12CafSmartAuth0abC9ViewModelC03cafbC08personID8policyId8listenerAcA0abC3SdkC_S2SyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAL_SSAMtAA0abC5ErrorOS2bGctcfc",
+            "mangledName": "$s12CafSmartAuth0abC9ViewModelC03cafbC08personID8policyId8listenerAcA0abC3SdkC_S2SyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAL_SSAMtAA0abC5ErrorOS2bGctcfc",
             "moduleName": "CafSmartAuth",
             "init_kind": "Designated"
           },
@@ -15617,8 +15617,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CafSmartAuth",
-        "printedName": "CafSmartAuth",
+        "name": "CafSmartAuthSdk",
+        "printedName": "CafSmartAuthSdk",
         "children": [
           {
             "kind": "Var",
@@ -15633,8 +15633,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuthAAC8SDK_NAMESSvp",
-            "mangledName": "$s12CafSmartAuthAAC8SDK_NAMESSvp",
+            "usr": "s:12CafSmartAuth0abC3SdkC8SDK_NAMESSvp",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC8SDK_NAMESSvp",
             "moduleName": "CafSmartAuth",
             "declAttributes": [
               "HasInitialValue",
@@ -15658,8 +15658,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8SDK_NAMESSvg",
-                "mangledName": "$s12CafSmartAuthAAC8SDK_NAMESSvg",
+                "usr": "s:12CafSmartAuth0abC3SdkC8SDK_NAMESSvg",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8SDK_NAMESSvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "declAttributes": [
@@ -15682,8 +15682,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuthAAC11SDK_VERSIONSSvp",
-            "mangledName": "$s12CafSmartAuthAAC11SDK_VERSIONSSvp",
+            "usr": "s:12CafSmartAuth0abC3SdkC11SDK_VERSIONSSvp",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC11SDK_VERSIONSSvp",
             "moduleName": "CafSmartAuth",
             "declAttributes": [
               "HasInitialValue",
@@ -15707,8 +15707,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC11SDK_VERSIONSSvg",
-                "mangledName": "$s12CafSmartAuthAAC11SDK_VERSIONSSvg",
+                "usr": "s:12CafSmartAuth0abC3SdkC11SDK_VERSIONSSvg",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC11SDK_VERSIONSSvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "declAttributes": [
@@ -15731,8 +15731,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuthAAC11mobileTokenSSvp",
-            "mangledName": "$s12CafSmartAuthAAC11mobileTokenSSvp",
+            "usr": "s:12CafSmartAuth0abC3SdkC11mobileTokenSSvp",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC11mobileTokenSSvp",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -15755,8 +15755,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC11mobileTokenSSvg",
-                "mangledName": "$s12CafSmartAuthAAC11mobileTokenSSvg",
+                "usr": "s:12CafSmartAuth0abC3SdkC11mobileTokenSSvg",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC11mobileTokenSSvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -15780,8 +15780,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC11mobileTokenSSvs",
-                "mangledName": "$s12CafSmartAuthAAC11mobileTokenSSvs",
+                "usr": "s:12CafSmartAuth0abC3SdkC11mobileTokenSSvs",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC11mobileTokenSSvs",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -15799,8 +15799,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC11mobileTokenSSvM",
-                "mangledName": "$s12CafSmartAuthAAC11mobileTokenSSvM",
+                "usr": "s:12CafSmartAuth0abC3SdkC11mobileTokenSSvM",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC11mobileTokenSSvM",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -15821,8 +15821,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuthAAC5stageAA8CAFStageOvp",
-            "mangledName": "$s12CafSmartAuthAAC5stageAA8CAFStageOvp",
+            "usr": "s:12CafSmartAuth0abC3SdkC5stageAA8CAFStageOvp",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC5stageAA8CAFStageOvp",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -15844,8 +15844,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC5stageAA8CAFStageOvg",
-                "mangledName": "$s12CafSmartAuthAAC5stageAA8CAFStageOvg",
+                "usr": "s:12CafSmartAuth0abC3SdkC5stageAA8CAFStageOvg",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC5stageAA8CAFStageOvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -15869,8 +15869,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC5stageAA8CAFStageOvs",
-                "mangledName": "$s12CafSmartAuthAAC5stageAA8CAFStageOvs",
+                "usr": "s:12CafSmartAuth0abC3SdkC5stageAA8CAFStageOvs",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC5stageAA8CAFStageOvs",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -15888,8 +15888,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC5stageAA8CAFStageOvM",
-                "mangledName": "$s12CafSmartAuthAAC5stageAA8CAFStageOvM",
+                "usr": "s:12CafSmartAuth0abC3SdkC5stageAA8CAFStageOvM",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC5stageAA8CAFStageOvM",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -15918,8 +15918,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuthAAC8emailURL10Foundation0E0VSgvp",
-            "mangledName": "$s12CafSmartAuthAAC8emailURL10Foundation0E0VSgvp",
+            "usr": "s:12CafSmartAuth0abC3SdkC8emailURL10Foundation0F0VSgvp",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC8emailURL10Foundation0F0VSgvp",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -15950,8 +15950,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8emailURL10Foundation0E0VSgvg",
-                "mangledName": "$s12CafSmartAuthAAC8emailURL10Foundation0E0VSgvg",
+                "usr": "s:12CafSmartAuth0abC3SdkC8emailURL10Foundation0F0VSgvg",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8emailURL10Foundation0F0VSgvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -15983,8 +15983,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8emailURL10Foundation0E0VSgvs",
-                "mangledName": "$s12CafSmartAuthAAC8emailURL10Foundation0E0VSgvs",
+                "usr": "s:12CafSmartAuth0abC3SdkC8emailURL10Foundation0F0VSgvs",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8emailURL10Foundation0F0VSgvs",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16002,8 +16002,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8emailURL10Foundation0E0VSgvM",
-                "mangledName": "$s12CafSmartAuthAAC8emailURL10Foundation0E0VSgvM",
+                "usr": "s:12CafSmartAuth0abC3SdkC8emailURL10Foundation0F0VSgvM",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8emailURL10Foundation0F0VSgvM",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16032,8 +16032,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuthAAC8phoneURL10Foundation0E0VSgvp",
-            "mangledName": "$s12CafSmartAuthAAC8phoneURL10Foundation0E0VSgvp",
+            "usr": "s:12CafSmartAuth0abC3SdkC8phoneURL10Foundation0F0VSgvp",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC8phoneURL10Foundation0F0VSgvp",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -16064,8 +16064,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8phoneURL10Foundation0E0VSgvg",
-                "mangledName": "$s12CafSmartAuthAAC8phoneURL10Foundation0E0VSgvg",
+                "usr": "s:12CafSmartAuth0abC3SdkC8phoneURL10Foundation0F0VSgvg",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8phoneURL10Foundation0F0VSgvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16097,8 +16097,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8phoneURL10Foundation0E0VSgvs",
-                "mangledName": "$s12CafSmartAuthAAC8phoneURL10Foundation0E0VSgvs",
+                "usr": "s:12CafSmartAuth0abC3SdkC8phoneURL10Foundation0F0VSgvs",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8phoneURL10Foundation0F0VSgvs",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16116,8 +16116,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8phoneURL10Foundation0E0VSgvM",
-                "mangledName": "$s12CafSmartAuthAAC8phoneURL10Foundation0E0VSgvM",
+                "usr": "s:12CafSmartAuth0abC3SdkC8phoneURL10Foundation0F0VSgvM",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8phoneURL10Foundation0F0VSgvM",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16138,8 +16138,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuthAAC8platformAA0A11SdkPlatformOvp",
-            "mangledName": "$s12CafSmartAuthAAC8platformAA0A11SdkPlatformOvp",
+            "usr": "s:12CafSmartAuth0abC3SdkC8platformAA0aD8PlatformOvp",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC8platformAA0aD8PlatformOvp",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -16162,8 +16162,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8platformAA0A11SdkPlatformOvg",
-                "mangledName": "$s12CafSmartAuthAAC8platformAA0A11SdkPlatformOvg",
+                "usr": "s:12CafSmartAuth0abC3SdkC8platformAA0aD8PlatformOvg",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8platformAA0aD8PlatformOvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16187,8 +16187,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8platformAA0A11SdkPlatformOvs",
-                "mangledName": "$s12CafSmartAuthAAC8platformAA0A11SdkPlatformOvs",
+                "usr": "s:12CafSmartAuth0abC3SdkC8platformAA0aD8PlatformOvs",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8platformAA0aD8PlatformOvs",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16206,8 +16206,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8platformAA0A11SdkPlatformOvM",
-                "mangledName": "$s12CafSmartAuthAAC8platformAA0A11SdkPlatformOvM",
+                "usr": "s:12CafSmartAuth0abC3SdkC8platformAA0aD8PlatformOvM",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8platformAA0aD8PlatformOvM",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16228,8 +16228,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuthAAC8settingsAA0A20FaceLivenessSettingsCvp",
-            "mangledName": "$s12CafSmartAuthAAC8settingsAA0A20FaceLivenessSettingsCvp",
+            "usr": "s:12CafSmartAuth0abC3SdkC8settingsAA0A20FaceLivenessSettingsCvp",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC8settingsAA0A20FaceLivenessSettingsCvp",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -16251,8 +16251,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8settingsAA0A20FaceLivenessSettingsCvg",
-                "mangledName": "$s12CafSmartAuthAAC8settingsAA0A20FaceLivenessSettingsCvg",
+                "usr": "s:12CafSmartAuth0abC3SdkC8settingsAA0A20FaceLivenessSettingsCvg",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8settingsAA0A20FaceLivenessSettingsCvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16276,8 +16276,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8settingsAA0A20FaceLivenessSettingsCvs",
-                "mangledName": "$s12CafSmartAuthAAC8settingsAA0A20FaceLivenessSettingsCvs",
+                "usr": "s:12CafSmartAuth0abC3SdkC8settingsAA0A20FaceLivenessSettingsCvs",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8settingsAA0A20FaceLivenessSettingsCvs",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16295,8 +16295,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuthAAC8settingsAA0A20FaceLivenessSettingsCvM",
-                "mangledName": "$s12CafSmartAuthAAC8settingsAA0A20FaceLivenessSettingsCvM",
+                "usr": "s:12CafSmartAuth0abC3SdkC8settingsAA0A20FaceLivenessSettingsCvM",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC8settingsAA0A20FaceLivenessSettingsCvM",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -16404,8 +16404,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12CafSmartAuthAAC12verifyPolicy8personID8policyId8listenerySS_SSyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAI_SSAJtAA0abC5ErrorOS2bGctF",
-            "mangledName": "$s12CafSmartAuthAAC12verifyPolicy8personID8policyId8listenerySS_SSyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAI_SSAJtAA0abC5ErrorOS2bGctF",
+            "usr": "s:12CafSmartAuth0abC3SdkC12verifyPolicy8personID8policyId8listenerySS_SSyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAJ_SSAKtAA0abC5ErrorOS2bGctF",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC12verifyPolicy8personID8policyId8listenerySS_SSyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAJ_SSAKtAA0abC5ErrorOS2bGctF",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -16421,14 +16421,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CafSmartAuth",
-                "printedName": "CafSmartAuth.CafSmartAuth",
-                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                "name": "CafSmartAuthSdk",
+                "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth(im)init",
-            "mangledName": "$s12CafSmartAuthAACABycfc",
+            "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk(im)init",
+            "mangledName": "$s12CafSmartAuth0abC3SdkCACycfc",
             "moduleName": "CafSmartAuth",
             "overriding": true,
             "implicit": true,
@@ -16458,8 +16458,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC11mobileTokenSSvp",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC11mobileTokenSSvp",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenSSvp",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenSSvp",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -16482,8 +16482,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC11mobileTokenSSvg",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC11mobileTokenSSvg",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenSSvg",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenSSvg",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16507,8 +16507,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC11mobileTokenSSvs",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC11mobileTokenSSvs",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenSSvs",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenSSvs",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16526,8 +16526,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC11mobileTokenSSvM",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC11mobileTokenSSvM",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenSSvM",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenSSvM",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16548,8 +16548,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC5stageAA8CAFStageOvp",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC5stageAA8CAFStageOvp",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC5stageAA8CAFStageOvp",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC5stageAA8CAFStageOvp",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -16572,8 +16572,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC5stageAA8CAFStageOvg",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC5stageAA8CAFStageOvg",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC5stageAA8CAFStageOvg",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC5stageAA8CAFStageOvg",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16597,8 +16597,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC5stageAA8CAFStageOvs",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC5stageAA8CAFStageOvs",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC5stageAA8CAFStageOvs",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC5stageAA8CAFStageOvs",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16616,8 +16616,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC5stageAA8CAFStageOvM",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC5stageAA8CAFStageOvM",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC5stageAA8CAFStageOvM",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC5stageAA8CAFStageOvM",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16646,8 +16646,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC8emailURL10Foundation0F0VSgvp",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8emailURL10Foundation0F0VSgvp",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8emailURL10Foundation0G0VSgvp",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8emailURL10Foundation0G0VSgvp",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -16678,8 +16678,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8emailURL10Foundation0F0VSgvg",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8emailURL10Foundation0F0VSgvg",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8emailURL10Foundation0G0VSgvg",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8emailURL10Foundation0G0VSgvg",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16711,8 +16711,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8emailURL10Foundation0F0VSgvs",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8emailURL10Foundation0F0VSgvs",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8emailURL10Foundation0G0VSgvs",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8emailURL10Foundation0G0VSgvs",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16730,8 +16730,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8emailURL10Foundation0F0VSgvM",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8emailURL10Foundation0F0VSgvM",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8emailURL10Foundation0G0VSgvM",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8emailURL10Foundation0G0VSgvM",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16760,8 +16760,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC8phoneURL10Foundation0F0VSgvp",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8phoneURL10Foundation0F0VSgvp",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8phoneURL10Foundation0G0VSgvp",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8phoneURL10Foundation0G0VSgvp",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -16792,8 +16792,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8phoneURL10Foundation0F0VSgvg",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8phoneURL10Foundation0F0VSgvg",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8phoneURL10Foundation0G0VSgvg",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8phoneURL10Foundation0G0VSgvg",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16825,8 +16825,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8phoneURL10Foundation0F0VSgvs",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8phoneURL10Foundation0F0VSgvs",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8phoneURL10Foundation0G0VSgvs",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8phoneURL10Foundation0G0VSgvs",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16844,8 +16844,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8phoneURL10Foundation0F0VSgvM",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8phoneURL10Foundation0F0VSgvM",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8phoneURL10Foundation0G0VSgvM",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8phoneURL10Foundation0G0VSgvM",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16866,8 +16866,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC8platformAA0A11SdkPlatformOvp",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8platformAA0A11SdkPlatformOvp",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8platformAA0aD8PlatformOvp",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8platformAA0aD8PlatformOvp",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -16890,8 +16890,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8platformAA0A11SdkPlatformOvg",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8platformAA0A11SdkPlatformOvg",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8platformAA0aD8PlatformOvg",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8platformAA0aD8PlatformOvg",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16915,8 +16915,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8platformAA0A11SdkPlatformOvs",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8platformAA0A11SdkPlatformOvs",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8platformAA0aD8PlatformOvs",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8platformAA0aD8PlatformOvs",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16934,8 +16934,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8platformAA0A11SdkPlatformOvM",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8platformAA0A11SdkPlatformOvM",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8platformAA0aD8PlatformOvM",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8platformAA0aD8PlatformOvM",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -16956,8 +16956,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvp",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvp",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvp",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvp",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -16980,8 +16980,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvg",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvg",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvg",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvg",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -17005,8 +17005,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvs",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvs",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvs",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvs",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -17024,8 +17024,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvM",
-                    "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvM",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvM",
+                    "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8settingsAA0A20FaceLivenessSettingsCvM",
                     "moduleName": "CafSmartAuth",
                     "implicit": true,
                     "isOpen": true,
@@ -17041,8 +17041,8 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CafBuilder",
-                    "printedName": "CafSmartAuth.CafSmartAuth.CafBuilder",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC"
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk.CafBuilder",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC"
                   },
                   {
                     "kind": "TypeNominal",
@@ -17052,8 +17052,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC11mobileTokenADSS_tcfc",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC11mobileTokenADSS_tcfc",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenAESS_tcfc",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC11mobileTokenAESS_tcfc",
                 "moduleName": "CafSmartAuth",
                 "declAttributes": [
                   "AccessControl",
@@ -17068,14 +17068,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CafSmartAuth",
-                    "printedName": "CafSmartAuth.CafSmartAuth",
-                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                    "name": "CafSmartAuthSdk",
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC5buildAByF",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC5buildAByF",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC5buildACyF",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC5buildACyF",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -17092,8 +17092,8 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CafBuilder",
-                    "printedName": "CafSmartAuth.CafSmartAuth.CafBuilder",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC"
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk.CafBuilder",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC"
                   },
                   {
                     "kind": "TypeNominal",
@@ -17103,8 +17103,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC8setStageyAdA8CAFStageOF",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC8setStageyAdA8CAFStageOF",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC8setStageyAeA8CAFStageOF",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC8setStageyAeA8CAFStageOF",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -17121,8 +17121,8 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CafBuilder",
-                    "printedName": "CafSmartAuth.CafSmartAuth.CafBuilder",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC"
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk.CafBuilder",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC"
                   },
                   {
                     "kind": "TypeNominal",
@@ -17140,8 +17140,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC11setEmailURLyAD10Foundation0G0VSgF",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC11setEmailURLyAD10Foundation0G0VSgF",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC11setEmailURLyAE10Foundation0H0VSgF",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC11setEmailURLyAE10Foundation0H0VSgF",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -17158,8 +17158,8 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CafBuilder",
-                    "printedName": "CafSmartAuth.CafSmartAuth.CafBuilder",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC"
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk.CafBuilder",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC"
                   },
                   {
                     "kind": "TypeNominal",
@@ -17177,8 +17177,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC11setPhoneURLyAD10Foundation0G0VSgF",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC11setPhoneURLyAD10Foundation0G0VSgF",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC11setPhoneURLyAE10Foundation0H0VSgF",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC11setPhoneURLyAE10Foundation0H0VSgF",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -17195,8 +17195,8 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CafBuilder",
-                    "printedName": "CafSmartAuth.CafSmartAuth.CafBuilder",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC"
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk.CafBuilder",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC"
                   },
                   {
                     "kind": "TypeNominal",
@@ -17206,8 +17206,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC11setPlatformyAdA0a3SdkF0OF",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC11setPlatformyAdA0a3SdkF0OF",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC11setPlatformyAeA0adG0OF",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC11setPlatformyAeA0adG0OF",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -17224,8 +17224,8 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CafBuilder",
-                    "printedName": "CafSmartAuth.CafSmartAuth.CafBuilder",
-                    "usr": "s:12CafSmartAuthAAC0A7BuilderC"
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk.CafBuilder",
+                    "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC"
                   },
                   {
                     "kind": "TypeNominal",
@@ -17235,8 +17235,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:12CafSmartAuthAAC0A7BuilderC19setLivenessSettingsyAdA0a4FacefG0CF",
-                "mangledName": "$s12CafSmartAuthAAC0A7BuilderC19setLivenessSettingsyAdA0a4FacefG0CF",
+                "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC19setLivenessSettingsyAeA0a4FacegH0CF",
+                "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC19setLivenessSettingsyAeA0a4FacegH0CF",
                 "moduleName": "CafSmartAuth",
                 "isOpen": true,
                 "declAttributes": [
@@ -17247,8 +17247,8 @@
               }
             ],
             "declKind": "Class",
-            "usr": "s:12CafSmartAuthAAC0A7BuilderC",
-            "mangledName": "$s12CafSmartAuthAAC0A7BuilderC",
+            "usr": "s:12CafSmartAuth0abC3SdkC0A7BuilderC",
+            "mangledName": "$s12CafSmartAuth0abC3SdkC0A7BuilderC",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -17259,8 +17259,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth",
-        "mangledName": "$s12CafSmartAuthAAC",
+        "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk",
+        "mangledName": "$s12CafSmartAuth0abC3SdkC",
         "moduleName": "CafSmartAuth",
         "isOpen": true,
         "declAttributes": [
@@ -40308,14 +40308,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CafSmartAuth",
-                "printedName": "CafSmartAuth.CafSmartAuth",
-                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                "name": "CafSmartAuthSdk",
+                "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC0A2ACvp",
-            "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC0A2ACvp",
+            "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC0AA0abC3SdkCvp",
+            "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC0AA0abC3SdkCvp",
             "moduleName": "CafSmartAuth",
             "isOpen": true,
             "declAttributes": [
@@ -40332,14 +40332,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CafSmartAuth",
-                    "printedName": "CafSmartAuth.CafSmartAuth",
-                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                    "name": "CafSmartAuthSdk",
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC0A2ACvg",
-                "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC0A2ACvg",
+                "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC0AA0abC3SdkCvg",
+                "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC0AA0abC3SdkCvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -40360,14 +40360,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "CafSmartAuth",
-                    "printedName": "CafSmartAuth.CafSmartAuth",
-                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                    "name": "CafSmartAuthSdk",
+                    "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                    "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC0A2ACvs",
-                "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC0A2ACvs",
+                "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC0AA0abC3SdkCvs",
+                "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC0AA0abC3SdkCvs",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -40388,8 +40388,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC0A2ACvM",
-                "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC0A2ACvM",
+                "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC0AA0abC3SdkCvM",
+                "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC0AA0abC3SdkCvM",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "isOpen": true,
@@ -41163,9 +41163,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CafSmartAuth",
-                "printedName": "CafSmartAuth.CafSmartAuth",
-                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuth"
+                "name": "CafSmartAuthSdk",
+                "printedName": "CafSmartAuth.CafSmartAuthSdk",
+                "usr": "c:@M@CafSmartAuth@objc(cs)CafSmartAuthSdk"
               },
               {
                 "kind": "TypeNominal",
@@ -41257,8 +41257,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC08personID8policyId8listenerAc2AC_S2SyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAK_SSALtAA0abC5ErrorOS2bGctcfc",
-            "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC08personID8policyId8listenerAc2AC_S2SyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAK_SSALtAA0abC5ErrorOS2bGctcfc",
+            "usr": "s:12CafSmartAuth0abC10ControllerC03cafbC08personID8policyId8listenerAcA0abC3SdkC_S2SyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAL_SSAMtAA0abC5ErrorOS2bGctcfc",
+            "mangledName": "$s12CafSmartAuth0abC10ControllerC03cafbC08personID8policyId8listenerAcA0abC3SdkC_S2SyAA0abC6ResultOySb12isAuthorized_SS11attestationtSbAL_SSAMtAA0abC5ErrorOS2bGctcfc",
             "moduleName": "CafSmartAuth",
             "declAttributes": [
               "RawDocComment"
@@ -53621,35 +53621,35 @@
     {
       "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Controller\/View Model\/CafSmartAuthViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 571,
+      "offset": 574,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Controller\/View Model\/CafSmartAuthViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 599,
+      "offset": 602,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Controller\/View Model\/CafSmartAuthViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 888,
+      "offset": 891,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Controller\/View Model\/CafSmartAuthViewModel.swift",
       "kind": "Array",
-      "offset": 1027,
+      "offset": 1030,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Controller\/View Model\/CafSmartAuthViewModel.swift",
       "kind": "Array",
-      "offset": 1093,
+      "offset": 1096,
       "length": 2,
       "value": "[]"
     },
@@ -53710,30 +53710,30 @@
       "value": "\"com.caf.cafSmartAuth.queue\""
     },
     {
-      "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Input\/CafSmartAuth.swift",
+      "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Input\/CafSmartAuthSdk.swift",
       "kind": "StringLiteral",
-      "offset": 419,
+      "offset": 421,
       "length": 14,
       "value": "\"CafSmartAuth\""
     },
     {
-      "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Input\/CafSmartAuth.swift",
+      "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Input\/CafSmartAuthSdk.swift",
       "kind": "StringLiteral",
-      "offset": 465,
+      "offset": 467,
       "length": 13,
       "value": "\"1.0.0-beta1\""
     },
     {
-      "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Input\/CafSmartAuth.swift",
+      "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Input\/CafSmartAuthSdk.swift",
       "kind": "StringLiteral",
-      "offset": 365,
-      "length": 12,
-      "value": "\"CafSmartAuth.CafSmartAuth\""
+      "offset": 364,
+      "length": 15,
+      "value": "\"CafSmartAuth.CafSmartAuthSdk\""
     },
     {
-      "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Input\/CafSmartAuth.swift",
+      "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Input\/CafSmartAuthSdk.swift",
       "kind": "StringLiteral",
-      "offset": 3043,
+      "offset": 3048,
       "length": 2,
       "value": "\"\""
     },
@@ -55623,7 +55623,7 @@
     {
       "filePath": "\/Users\/caf\/Documents\/ios_project\/caf-ios2\/caf-ios\/OldSolutions\/CafSmartAuth\/CafSmartAuth\/CafSmartAuth\/Controller\/CafSmartAuthController.swift",
       "kind": "StringLiteral",
-      "offset": 410,
+      "offset": 413,
       "length": 2,
       "value": "\"\""
     },
