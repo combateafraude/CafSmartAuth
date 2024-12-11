@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/combateafraude/CafSolutions.git",
         "state": {
           "branch": null,
-          "revision": "2dee43bae3daefa56c8c199e75c0ad5c5b48228c",
-          "version": "1.0.0"
+          "revision": "c7b8b0bdb4fc0194e7a8d9e15461045a0454c5cd",
+          "version": "1.0.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/combateafraude/FaceLiveness.git",
         "state": {
           "branch": null,
-          "revision": "f9e4611622f8982bbedb035c9d62b3a9c434a3d2",
-          "version": "6.2.1"
+          "revision": "789e826ca04c96b3efd279faeb3fb13ffad3a168",
+          "version": "6.3.2"
         }
       },
       {
