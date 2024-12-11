@@ -1,0 +1,11 @@
+framework module CafSmartAuth {
+  umbrella header "CafSmartAuth.h"
+  export *
+
+  module * { export * }
+}
+
+module CafSmartAuth.Swift {
+  header "CafSmartAuth-Swift.h"
+  requires objc
+}

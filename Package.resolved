@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CafSolutions",
+        "repositoryURL": "https://github.com/combateafraude/CafSolutions.git",
+        "state": {
+          "branch": null,
+          "revision": "c7b8b0bdb4fc0194e7a8d9e15461045a0454c5cd",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "FaceLiveness",
+        "repositoryURL": "https://github.com/combateafraude/FaceLiveness.git",
+        "state": {
+          "branch": null,
+          "revision": "789e826ca04c96b3efd279faeb3fb13ffad3a168",
+          "version": "6.3.2"
+        }
+      },
+      {
+        "package": "FingerprintPro",
+        "repositoryURL": "https://github.com/fingerprintjs/fingerprintjs-pro-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "df75db119bc63f51e8b4d8c9e4edf0f38f346912",
+          "version": "2.6.0"
+        }
+      },
+      {
+        "package": "iProov",
+        "repositoryURL": "https://github.com/iProov/ios.git",
+        "state": {
+          "branch": null,
+          "revision": "33db3b2559184651a780d76bba3add40f05d6c21",
+          "version": "12.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
