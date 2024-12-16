@@ -41,6 +41,35 @@ To add **CafSmartAuth 1.0.0-beta1** to your project using **Swift Package Manage
 4. Select the version `1.0.0-beta1` or choose the "Up to Next Major" option to ensure your project will automatically get future compatible updates.
 5. Complete the steps, and Xcode will automatically integrate the **CafSmartAuth** SDK into your project.
 
+## CocoaPods
+
+1. **Ensure CocoaPods is installed** on your system. If not, install it using:
+
+```bash
+   sudo gem install cocoapods
+```
+
+2. Navigate to your project directory in the terminal.
+
+3. Create or update your Podfile with the following content:
+
+```bash
+   platform :ios, '13.0'
+    use_frameworks!
+
+    target 'YourAppTarget' do
+        pod 'CafSmartAuth', '~> 1.0.0-beta1'
+    end
+```
+4. Install the pod by running:
+
+```bash
+pod install
+```
+
+5. Open the generated .xcworkspace file to work on your project.
+
+
 ## Usage
 
 To import and use **CafSmartAuth** in your app, add the following import statement at the top of your Swift files:
