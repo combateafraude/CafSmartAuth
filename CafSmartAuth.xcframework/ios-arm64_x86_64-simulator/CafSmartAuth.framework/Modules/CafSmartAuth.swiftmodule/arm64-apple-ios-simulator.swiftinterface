@@ -17,14 +17,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol CafFaceLivenessProvidersProtocol {
-  func startLivenessCheck(parameters: [Swift.String : Any], livenessBaseUrl: Swift.String, certificates: [Swift.String], completion: @escaping ([Swift.String : Any]) -> Swift.Void)
-}
-public typealias CafVerifyPolicyResponse = (isAuthorized: Swift.Bool, attestation: Swift.String)
-public typealias CafLoadingLiveness = (Swift.Bool)
-public typealias CafLoadedLiveness = (Swift.Bool)
-public typealias CafVerifyPolicyResult = CafSmartAuth.CafSmartAuthResult<CafSmartAuth.CafVerifyPolicyResponse, CafSmartAuth.CafVerifyPolicyResponse, CafSmartAuth.CafSmartAuthError, CafSmartAuth.CafLoadingLiveness, CafSmartAuth.CafLoadedLiveness>
-public typealias CafVerifyPolicyListener = (CafSmartAuth.CafVerifyPolicyResult) -> Swift.Void
 public enum CAFStage : Swift.Int {
   case dev
   case beta
@@ -63,13 +55,19 @@ public enum CafErrorType : Swift.String, Swift.Encodable {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers open class CafSmartAuthSdk : ObjectiveC.NSObject {
+public typealias CafVerifyPolicyResponse = (isAuthorized: Swift.Bool, attestation: Swift.String)
+public typealias CafLoadingLiveness = (Swift.Bool)
+public typealias CafLoadedLiveness = (Swift.Bool)
+public typealias CafVerifyPolicyResult = CafSmartAuth.CafSmartAuthResult<CafSmartAuth.CafVerifyPolicyResponse, CafSmartAuth.CafVerifyPolicyResponse, CafSmartAuth.CafSmartAuthError, CafSmartAuth.CafLoadingLiveness, CafSmartAuth.CafLoadedLiveness>
+public typealias CafVerifyPolicyListener = (CafSmartAuth.CafVerifyPolicyResult) -> Swift.Void
+@objc @_hasMissingDesignatedInitializers open class CafSmartAuthSdk : ObjectiveC.NSObject, Swift.Encodable {
   public var mobileToken: Swift.String
   public var stage: CafSmartAuth.CAFStage
   public var emailURL: Foundation.URL?
   public var phoneURL: Foundation.URL?
   public var platform: CafSmartAuth.CafSdkPlatform
   public var settings: CafSmartAuth.CafFaceLivenessSettings
+  public func encode(to encoder: any Swift.Encoder) throws
   public func verifyPolicy(personID: Swift.String, policyId: Swift.String, listener: @escaping CafSmartAuth.CafVerifyPolicyListener)
   @objc deinit
 }
@@ -95,6 +93,9 @@ extension CafSmartAuth.CafSmartAuthSdk {
   public var error: Swift.String
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public protocol CafFaceLivenessProvidersProtocol {
+  func startLivenessCheck(parameters: [Swift.String : Any], livenessBaseUrl: Swift.String, certificates: [Swift.String], completion: @escaping ([Swift.String : Any]) -> Swift.Void)
 }
 public enum CafSmartAuthError : Swift.Error {
   case PermissionReason(Swift.String)
@@ -147,18 +148,19 @@ extension CafSmartAuth.CafSmartAuthError : Foundation.LocalizedError {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public enum CafFilterStyle {
+public enum CafFilterStyle : Swift.String, Swift.Encodable {
   case natural
   case lineDrawing
-  public static func == (a: CafSmartAuth.CafFilterStyle, b: CafSmartAuth.CafFilterStyle) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
-public class CafFaceLivenessSettings {
+public class CafFaceLivenessSettings : Swift.Encodable {
   public init(faceLivenessToken: Swift.String, useLoadingScreen: Swift.Bool? = nil, filter: CafSmartAuth.CafFilterStyle? = nil)
   @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension CafSmartAuth.CAFStage : Swift.Equatable {}
 extension CafSmartAuth.CAFStage : Swift.Hashable {}
@@ -171,3 +173,4 @@ extension CafSmartAuth.CafErrorType : Swift.Hashable {}
 extension CafSmartAuth.CafErrorType : Swift.RawRepresentable {}
 extension CafSmartAuth.CafFilterStyle : Swift.Equatable {}
 extension CafSmartAuth.CafFilterStyle : Swift.Hashable {}
+extension CafSmartAuth.CafFilterStyle : Swift.RawRepresentable {}

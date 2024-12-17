@@ -18,43 +18,43 @@
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		52FtSS43b4ToFPl8/OKzle8LTP0=
+		18wpDJt5Qdj/zotPNeLznY2fPbY=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cppvIfJVFJmGwqjty0W39ubfI6k=
+		fXQB6Tlee5CCZsov78DnQ2FWj3Q=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mxQrM9/2x3h0bjU1vEOY9o0gQOY=
+		SPH65Oqj27zU5hkRbrXd/Fhj0tI=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cppvIfJVFJmGwqjty0W39ubfI6k=
+		fXQB6Tlee5CCZsov78DnQ2FWj3Q=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VyQh+6LgBg3cJg4XJwAMMXXsT9A=
+		tKKDkkZ/PcfKkdTZRPOTLGHFqls=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		52FtSS43b4ToFPl8/OKzle8LTP0=
+		18wpDJt5Qdj/zotPNeLznY2fPbY=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xPRB5mmJu/A5iOOC3kYnwySt0/w=
+		67kI/BkjZOmKys4L8r09ljGj//o=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		MNSwCW8QVkdV47dmfO220zelmQI=
+		/uVoS/BXHtTptr3PXPTrb/xMLKA=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xPRB5mmJu/A5iOOC3kYnwySt0/w=
+		67kI/BkjZOmKys4L8r09ljGj//o=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Oc9nHwcEjCJGFjbI05p0hAdhwpg=
+		WQhiYvuCEIP+wMgnALUsDytwDMQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,70 +99,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozmEXisFwd2xEwa3WNc8Q41FirHG9Ya6qwtB+DgH1V4=
+			URzW1LGSV/Xa5CJ07ZUUAUKXAj3OPTWapjlJvyF4h4A=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x4YihOfoOv0gjyPVjyAL/B7DNXARI68tm8Eu9QBnHCc=
+			m72ynWFZtlxkV8dtAmvCbMfeuAWuxd2B2sk8v9f89GA=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O3RF0LY9ePIdecPnnTFdX+jKsPlq+E4p9wFGFbZSZlQ=
+			1waXXNoCktu0+Xl8opzsEMliBVCwIZe3yl6LLfAChGA=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x4YihOfoOv0gjyPVjyAL/B7DNXARI68tm8Eu9QBnHCc=
+			m72ynWFZtlxkV8dtAmvCbMfeuAWuxd2B2sk8v9f89GA=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u9keWCmA4enoBJmBRNowlZolc5/Qrcepcso1BNJJ/LE=
+			C/fZcgtO0Ynh/6eAuvm/SPGvChLp1Dnfllhz+wL6hAU=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozmEXisFwd2xEwa3WNc8Q41FirHG9Ya6qwtB+DgH1V4=
+			URzW1LGSV/Xa5CJ07ZUUAUKXAj3OPTWapjlJvyF4h4A=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BWCQJHVGGRzkjPBhYrteldhPgKSvlbhUzC73RYsNinc=
+			YkGu8tGdJLpOJKV6yyq/gnK6tQeHM7/t3Z5wlexf23M=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zfm32oICwYISHpReRscTQj3hG0wY9OKORknp9NUxUrs=
+			FRZ76Wy+1pHrToztmvtHkbLgABT1nb7VwA2DVSmATOM=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BWCQJHVGGRzkjPBhYrteldhPgKSvlbhUzC73RYsNinc=
+			YkGu8tGdJLpOJKV6yyq/gnK6tQeHM7/t3Z5wlexf23M=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BgamuHVNu0NFmvfgTFoHmbi72TGHh7sxTsFux6n/46w=
+			siqCsBOy4JLXxNieru18zHWEfrR52rihr4ld6ZclINk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
