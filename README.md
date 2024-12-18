@@ -8,7 +8,7 @@
 
 | SDK            | Version       |
 | -------------- | ------------- |
-| CafSmartAuth   | 1.0.0-beta1    |
+| CafSmartAuth   | 1.0.0-beta2    |
 
 #### Requirements
 
@@ -30,7 +30,7 @@ Make sure to add the following entries to your app's `Info.plist` file, explaini
 
 ## Swift Package Manager (SPM) SDK Installation
 
-To add **CafSmartAuth 1.0.0-beta1** to your project using **Swift Package Manager**:
+To add **CafSmartAuth 1.0.0-beta2** to your project using **Swift Package Manager**:
 
 1. Open your Xcode project.
 2. Navigate to **File > Add Packages**.
@@ -38,7 +38,7 @@ To add **CafSmartAuth 1.0.0-beta1** to your project using **Swift Package Manage
     ```console
     https://github.com/combateafraude/CafSmartAuth.git
     ```
-4. Select the version `1.0.0-beta1` or choose the "Up to Next Major" option to ensure your project will automatically get future compatible updates.
+4. Select the version `1.0.0-beta2` or choose the "Up to Next Major" option to ensure your project will automatically get future compatible updates.
 5. Complete the steps, and Xcode will automatically integrate the **CafSmartAuth** SDK into your project.
 
 ## CocoaPods
@@ -58,7 +58,7 @@ To add **CafSmartAuth 1.0.0-beta1** to your project using **Swift Package Manage
     use_frameworks!
 
     target 'YourAppTarget' do
-        pod 'CafSmartAuth', '~> 1.0.0-beta1'
+        pod 'CafSmartAuth', '~> 1.0.0-beta2'
     end
 ```
 4. Install the pod by running:
