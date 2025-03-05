@@ -355,6 +355,7 @@ SWIFT_CLASS("_TtC12CafSmartAuth15CafSmartAuthSdk")
 
 
 
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
