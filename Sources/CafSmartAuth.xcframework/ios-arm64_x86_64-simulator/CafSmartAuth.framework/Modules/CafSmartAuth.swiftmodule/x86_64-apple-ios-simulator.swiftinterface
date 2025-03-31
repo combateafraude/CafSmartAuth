@@ -1,0 +1,199 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CafSmartAuth
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AdSupport
+@_exported import CafSmartAuth
+import CafSolutions
+import CommonCrypto/*.CC_LONG*/
+import CommonCrypto/*.CC_MD5*/
+import CommonCrypto/*.CC_MD5_DIGEST_LENGTH*/
+import CoreLocation
+import FaceLiveness
+import FingerprintPro
+import Foundation
+import Security
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public typealias CafVerifyPolicyResponse = (isAuthorized: Swift.Bool, attestation: Swift.String, attemptId: Swift.String?)
+public typealias CafLoadingLiveness = (Swift.Bool)
+public typealias CafLoadedLiveness = (Swift.Bool)
+public struct CafSmartAuthErrorResult : Swift.Error {
+  public let error: CafSmartAuth.CafSmartAuthError
+  public let attemptId: Swift.String
+}
+public typealias CafVerifyPolicyResult = CafSmartAuth.CafSmartAuthResult<CafSmartAuth.CafVerifyPolicyResponse, CafSmartAuth.CafVerifyPolicyResponse, CafSmartAuth.CafSmartAuthErrorResult, CafSmartAuth.CafLoadingLiveness, CafSmartAuth.CafLoadedLiveness>
+public typealias CafVerifyPolicyListener = (CafSmartAuth.CafVerifyPolicyResult) -> Swift.Void
+@objc @_hasMissingDesignatedInitializers open class CafSmartAuthSdk : ObjectiveC.NSObject, Swift.Encodable {
+  public var mobileToken: Swift.String
+  public var stage: CafSmartAuth.CafEnvironment
+  public var emailURL: Foundation.URL?
+  public var phoneURL: Foundation.URL?
+  public var platform: CafSmartAuth.CafSdkPlatform
+  public var settings: CafSmartAuth.CafFaceLivenessSettings
+  public var themeConfigurator: CafSmartAuth.CafThemeConfigurator?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func verifyPolicy(personID: Swift.String, policyId: Swift.String, listener: @escaping CafSmartAuth.CafVerifyPolicyListener)
+  @objc deinit
+}
+extension CafSmartAuth.CafSmartAuthSdk {
+  public class CafBuilder {
+    public init(mobileToken: Swift.String)
+    public func build() -> CafSmartAuth.CafSmartAuthSdk
+    public func setStage(_ newStage: CafSmartAuth.CafEnvironment) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
+    public func setEmailURL(_ url: Foundation.URL?) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
+    public func setPhoneURL(_ url: Foundation.URL?) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
+    public func setPlatform(_ platform: CafSmartAuth.CafSdkPlatform) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
+    public func setLivenessSettings(_ settings: CafSmartAuth.CafFaceLivenessSettings) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
+    public func setThemeConfigurator(_ configurator: CafSmartAuth.CafThemeConfigurator) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
+    @objc deinit
+  }
+}
+public enum CafEnvironment : Swift.Int {
+  case dev
+  case beta
+  case prod
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension CafSmartAuth.CafEnvironment {
+  public func toString() -> Swift.String
+}
+public enum CafSdkPlatform : Swift.String {
+  case nativeIos
+  case reactNativeIos
+  case flutterIos
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CafSDKFailure : Swift.Encodable {
+  public init(errorType: CafSmartAuth.CafErrorType?, description: Swift.String?)
+  public let errorType: CafSmartAuth.CafErrorType?
+  public let description: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum CafErrorType : Swift.String, Swift.Encodable {
+  case unsupportedDevice
+  case cameraPermission
+  case networkException
+  case serverException
+  case tokenException
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResult : ObjectiveC.NSObject, Swift.Encodable {
+  public var isAuthorized: Swift.Bool?
+  public var attestation: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResultError : ObjectiveC.NSObject, Swift.Encodable {
+  public var error: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum CafSmartAuthError : Swift.Error {
+  case PermissionReason(Swift.String)
+  case AvailabilityReason(Swift.String)
+  case NetworkReason
+  case ServerReason(Swift.String, Swift.String)
+  case SecurityReason(Swift.String)
+  case StorageReason(Swift.String)
+  case PolicyReason(Swift.String)
+  case GetLocationReason(Swift.String)
+  case TerminateByUser(Swift.String)
+}
+extension CafSmartAuth.CafSmartAuthError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@frozen public enum CafSmartAuthResult<Success, Pending, Failure, Loading, Loaded> where Failure : Swift.Error {
+  case onSuccess(Success)
+  case onPending(Pending)
+  case onError(Failure)
+  case onCanceled(Failure)
+  case onLoading(Loading)
+  case onLoaded(Loaded)
+}
+public struct CafThemeConfigurator {
+  public var lightTheme: CafSmartAuth.CafTheme
+  public var darkTheme: CafSmartAuth.CafTheme
+  public init(lightTheme: CafSmartAuth.CafTheme = CafTheme(), darkTheme: CafSmartAuth.CafTheme = CafTheme())
+}
+public struct CafTheme {
+  public var backgroundColor: UIKit.UIColor
+  public var textColor: UIKit.UIColor
+  public var linkColor: UIKit.UIColor
+  public var boxBorderColor: UIKit.UIColor
+  public var boxFilledBorderColor: UIKit.UIColor
+  public var boxBackgroundColor: UIKit.UIColor
+  public var boxFilledBackgroundColor: UIKit.UIColor
+  public var boxTextColor: UIKit.UIColor
+  public var progressColor: UIKit.UIColor
+  public init(backgroundColor: Swift.String = "#FFFFFF", textColor: Swift.String = "#FF000000", linkColor: Swift.String = "#004AF7", boxBorderColor: Swift.String = "#cbcbcb", boxFilledBorderColor: Swift.String = "#004AF7", boxBackgroundColor: Swift.String = "#D3D3D3", boxFilledBackgroundColor: Swift.String = "#D3D3D3", boxTextColor: Swift.String = "#004AF7", progressColor: Swift.String = "#004AF7")
+}
+@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResult : ObjectiveC.NSObject, Swift.Encodable {
+  public var isAuthorized: Swift.Bool?
+  public var attestation: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultWithPending : ObjectiveC.NSObject, Swift.Encodable {
+  public var isAuthorized: Swift.Bool?
+  public var attestation: Swift.String?
+  public var requestId: Swift.String?
+  public var message: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultError : ObjectiveC.NSObject, Swift.Encodable {
+  public var error: Swift.String
+  public var message: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultDisapproved : ObjectiveC.NSObject, Swift.Encodable {
+  public var isAuthorized: Swift.Bool?
+  public var attestation: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum CafFilterStyle : Swift.String, Swift.Encodable {
+  case natural
+  case lineDrawing
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class CafFaceLivenessSettings : Swift.Encodable {
+  public init(faceLivenessToken: Swift.String, useLoadingScreen: Swift.Bool? = nil, filter: CafSmartAuth.CafFilterStyle? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension CafSmartAuth.CafEnvironment : Swift.Equatable {}
+extension CafSmartAuth.CafEnvironment : Swift.Hashable {}
+extension CafSmartAuth.CafEnvironment : Swift.RawRepresentable {}
+extension CafSmartAuth.CafSdkPlatform : Swift.Equatable {}
+extension CafSmartAuth.CafSdkPlatform : Swift.Hashable {}
+extension CafSmartAuth.CafSdkPlatform : Swift.RawRepresentable {}
+extension CafSmartAuth.CafErrorType : Swift.Equatable {}
+extension CafSmartAuth.CafErrorType : Swift.Hashable {}
+extension CafSmartAuth.CafErrorType : Swift.RawRepresentable {}
+extension CafSmartAuth.CafFilterStyle : Swift.Equatable {}
+extension CafSmartAuth.CafFilterStyle : Swift.Hashable {}
+extension CafSmartAuth.CafFilterStyle : Swift.RawRepresentable {}
