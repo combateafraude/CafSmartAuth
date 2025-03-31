@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
   s.ios.vendored_frameworks = 'CafSmartAuth.xcframework'
 
-  s.dependency 'FaceLiveness', '6.3.2'
-  s.dependency 'FingerprintPro', '2.6.0'
-  s.dependency 'CafSolutions', '1.0.1'
+  s.dependency 'FaceLiveness', '7.1.0'
+  s.dependency 'FingerprintPro', '2.7.0'
+  s.dependency 'CafSolutions', '2.0.3'
 end
