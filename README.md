@@ -2,14 +2,6 @@
 
 # CafSmartAuth SDK for iOS
 
-## Current Version
-
-### Stable
-
-| SDK            | Version       |
-| -------------- | ------------- |
-| CafSmartAuth   | 1.1.0   |
-
 #### Requirements
 
 | Deployment Info | Version       |
@@ -58,7 +50,7 @@ To add **CafSmartAuth 1.1.0** to your project using **Swift Package Manager**:
     use_frameworks!
 
     target 'YourAppTarget' do
-        pod 'CafSmartAuth', '~> 1.1.0'
+        pod 'CafSmartAuth'
     end
 ```
 4. Install the pod by running:

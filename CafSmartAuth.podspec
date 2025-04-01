@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'services@caf.io' => 'services@caf.io' }
   s.source           = { :git => 'https://github.com/combateafraude/CafSmartAuth.git', :tag => s.version.to_s }
- 
-  
+
+
   s.swift_version = '5.0'
   s.ios.deployment_target = '13.0'
-  s.ios.vendored_frameworks = 'CafSmartAuth.xcframework'
+  s.ios.vendored_frameworks = 'Sources/CafSmartAuth.xcframework'
 
   s.dependency 'FaceLiveness', '7.1.0'
   s.dependency 'FingerprintPro', '2.7.0'
