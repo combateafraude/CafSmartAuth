@@ -9064,7 +9064,7 @@
       "kind": "StringLiteral",
       "offset": 477,
       "length": 7,
-      "value": "\"1.2.0\""
+      "value": "\"1.2.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-sdks\/caf-smart-auth\/CafSmartAuth\/Input\/CafSmartAuthSdk.swift",
