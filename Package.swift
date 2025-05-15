@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/combateafraude/FaceLiveness.git",
-            .exact("7.1.0")
+            .exact("7.2.1")
         ),
         .package(
             url: "https://github.com/fingerprintjs/fingerprintjs-pro-ios.git",
@@ -29,7 +29,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "CafSmartAuth",
-            path: "CafSmartAuth.xcframework"
+            path: "Sources/CafSmartAuth.xcframework"
         ),
         .target(
             name: "CafSmartAuthSDK",
