@@ -2284,8 +2284,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CafSDKFailure",
-        "printedName": "CafSDKFailure",
+        "name": "CafSDKError",
+        "printedName": "CafSDKError",
         "children": [
           {
             "kind": "Constructor",
@@ -2294,23 +2294,15 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CafSDKFailure",
-                "printedName": "CafSmartAuth.CafSDKFailure",
-                "usr": "s:12CafSmartAuth0A10SDKFailureV"
+                "name": "CafSDKError",
+                "printedName": "CafSmartAuth.CafSDKError",
+                "usr": "s:12CafSmartAuth0A8SDKErrorV"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CafSmartAuth.CafErrorType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CafErrorType",
-                    "printedName": "CafSmartAuth.CafErrorType",
-                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "CafErrorType",
+                "printedName": "CafSmartAuth.CafErrorType",
+                "usr": "s:12CafSmartAuth0A9ErrorTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -2328,8 +2320,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12CafSmartAuth0A10SDKFailureV9errorType11descriptionAcA0a5ErrorF0OSg_SSSgtcfc",
-            "mangledName": "$s12CafSmartAuth0A10SDKFailureV9errorType11descriptionAcA0a5ErrorF0OSg_SSSgtcfc",
+            "usr": "s:12CafSmartAuth0A8SDKErrorV9errorType11descriptionAcA0a5ErrorF0O_SSSgtcfc",
+            "mangledName": "$s12CafSmartAuth0A8SDKErrorV9errorType11descriptionAcA0a5ErrorF0O_SSSgtcfc",
             "moduleName": "CafSmartAuth",
             "declAttributes": [
               "AccessControl",
@@ -2344,8 +2336,26 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CafSmartAuth.CafErrorType?",
+                "name": "CafErrorType",
+                "printedName": "CafSmartAuth.CafErrorType",
+                "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CafSmartAuth0A8SDKErrorV9errorTypeAA0a5ErrorF0Ovp",
+            "mangledName": "$s12CafSmartAuth0A8SDKErrorV9errorTypeAA0a5ErrorF0Ovp",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2354,12 +2364,38 @@
                     "usr": "s:12CafSmartAuth0A9ErrorTypeO"
                   }
                 ],
+                "declKind": "Accessor",
+                "usr": "s:12CafSmartAuth0A8SDKErrorV9errorTypeAA0a5ErrorF0Ovg",
+                "mangledName": "$s12CafSmartAuth0A8SDKErrorV9errorTypeAA0a5ErrorF0Ovg",
+                "moduleName": "CafSmartAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CafSmartAuth0A10SDKFailureV9errorTypeAA0a5ErrorF0OSgvp",
-            "mangledName": "$s12CafSmartAuth0A10SDKFailureV9errorTypeAA0a5ErrorF0OSgvp",
+            "usr": "s:12CafSmartAuth0A8SDKErrorV11descriptionSSSgvp",
+            "mangledName": "$s12CafSmartAuth0A8SDKErrorV11descriptionSSSgvp",
             "moduleName": "CafSmartAuth",
             "declAttributes": [
               "HasStorage",
@@ -2376,21 +2412,244 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CafSmartAuth.CafErrorType?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "CafErrorType",
-                        "printedName": "CafSmartAuth.CafErrorType",
-                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CafSmartAuth0A10SDKFailureV9errorTypeAA0a5ErrorF0OSgvg",
-                "mangledName": "$s12CafSmartAuth0A10SDKFailureV9errorTypeAA0a5ErrorF0OSgvg",
+                "usr": "s:12CafSmartAuth0A8SDKErrorV11descriptionSSSgvg",
+                "mangledName": "$s12CafSmartAuth0A8SDKErrorV11descriptionSSSgvg",
+                "moduleName": "CafSmartAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CafSmartAuth0A8SDKErrorV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s12CafSmartAuth0A8SDKErrorV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CafSmartAuth",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CafSmartAuth0A8SDKErrorV",
+        "mangledName": "$s12CafSmartAuth0A8SDKErrorV",
+        "moduleName": "CafSmartAuth",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CafSDKFailure",
+        "printedName": "CafSDKFailure",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(signedResponse:failureReason:description:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CafSDKFailure",
+                "printedName": "CafSmartAuth.CafSDKFailure",
+                "usr": "s:12CafSmartAuth0A10SDKFailureV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CafFailureType",
+                "printedName": "CafSmartAuth.CafFailureType",
+                "usr": "s:12CafSmartAuth0A11FailureTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CafSmartAuth0A10SDKFailureV14signedResponse13failureReason11descriptionACSSSg_AA0A11FailureTypeOAGtcfc",
+            "mangledName": "$s12CafSmartAuth0A10SDKFailureV14signedResponse13failureReason11descriptionACSSSg_AA0A11FailureTypeOAGtcfc",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "signedResponse",
+            "printedName": "signedResponse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CafSmartAuth0A10SDKFailureV14signedResponseSSSgvp",
+            "mangledName": "$s12CafSmartAuth0A10SDKFailureV14signedResponseSSSgvp",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CafSmartAuth0A10SDKFailureV14signedResponseSSSgvg",
+                "mangledName": "$s12CafSmartAuth0A10SDKFailureV14signedResponseSSSgvg",
+                "moduleName": "CafSmartAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failureReason",
+            "printedName": "failureReason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CafFailureType",
+                "printedName": "CafSmartAuth.CafFailureType",
+                "usr": "s:12CafSmartAuth0A11FailureTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CafSmartAuth0A10SDKFailureV13failureReasonAA0A11FailureTypeOvp",
+            "mangledName": "$s12CafSmartAuth0A10SDKFailureV13failureReasonAA0A11FailureTypeOvp",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CafSmartAuth0A10SDKFailureV13failureReasonAA0A11FailureTypeOvg",
+                "mangledName": "$s12CafSmartAuth0A10SDKFailureV13failureReasonAA0A11FailureTypeOvg",
                 "moduleName": "CafSmartAuth",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2721,6 +2980,366 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "captureAlreadyActiveException",
+            "printedName": "captureAlreadyActiveException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO29captureAlreadyActiveExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO29captureAlreadyActiveExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unexpectedErrorException",
+            "printedName": "unexpectedErrorException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO010unexpectedD9ExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO010unexpectedD9ExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userTimeoutException",
+            "printedName": "userTimeoutException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO20userTimeoutExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO20userTimeoutExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageNotFoundException",
+            "printedName": "imageNotFoundException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO22imageNotFoundExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO22imageNotFoundExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tooManyRequestsException",
+            "printedName": "tooManyRequestsException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO24tooManyRequestsExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO24tooManyRequestsExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknownException",
+            "printedName": "unknownException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO16unknownExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO16unknownExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "libraryException",
+            "printedName": "libraryException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO16libraryExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO16libraryExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "permissionException",
+            "printedName": "permissionException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO19permissionExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO19permissionExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidResponseException",
+            "printedName": "invalidResponseException",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafErrorType.Type) -> CafSmartAuth.CafErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO24invalidResponseExceptionyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO24invalidResponseExceptionyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -2787,6 +3406,66 @@
                 "usr": "s:12CafSmartAuth0A9ErrorTypeO8rawValueSSvg",
                 "mangledName": "$s12CafSmartAuth0A9ErrorTypeO8rawValueSSvg",
                 "moduleName": "CafSmartAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CafSmartAuth.CafErrorType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafErrorType",
+                    "printedName": "CafSmartAuth.CafErrorType",
+                    "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CafSmartAuth0A9ErrorTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s12CafSmartAuth0A9ErrorTypeO8allCasesSayACGvpZ",
+            "moduleName": "CafSmartAuth",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CafSmartAuth.CafErrorType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CafSmartAuth0A9ErrorTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s12CafSmartAuth0A9ErrorTypeO8allCasesSayACGvgZ",
+                "moduleName": "CafSmartAuth",
+                "static": true,
                 "implicit": true,
                 "accessorKind": "get"
               }
@@ -2858,6 +3537,712 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CafSmartAuth.CafErrorType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafErrorType",
+                        "printedName": "CafSmartAuth.CafErrorType",
+                        "usr": "s:12CafSmartAuth0A9ErrorTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CafFailureType",
+        "printedName": "CafFailureType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO7unknownyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO7unknownyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tooMuchMovement",
+            "printedName": "tooMuchMovement",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO15tooMuchMovementyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO15tooMuchMovementyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tooBright",
+            "printedName": "tooBright",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO9tooBrightyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO9tooBrightyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tooDark",
+            "printedName": "tooDark",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO7tooDarkyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO7tooDarkyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "misalignedFace",
+            "printedName": "misalignedFace",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO14misalignedFaceyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO14misalignedFaceyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eyesClosed",
+            "printedName": "eyesClosed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO10eyesClosedyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO10eyesClosedyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceTooFar",
+            "printedName": "faceTooFar",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO10faceTooFaryA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO10faceTooFaryA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceTooClose",
+            "printedName": "faceTooClose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO12faceTooCloseyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO12faceTooCloseyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sunglasses",
+            "printedName": "sunglasses",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO10sunglassesyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO10sunglassesyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "obscuredFace",
+            "printedName": "obscuredFace",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO12obscuredFaceyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO12obscuredFaceyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "multipleFaces",
+            "printedName": "multipleFaces",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CafSmartAuth.CafFailureType.Type) -> CafSmartAuth.CafFailureType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CafSmartAuth.CafFailureType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO13multipleFacesyA2CmF",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO13multipleFacesyA2CmF",
+            "moduleName": "CafSmartAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CafSmartAuth.CafFailureType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "CafSmartAuth",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO8rawValueSSvp",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO8rawValueSSvp",
+            "moduleName": "CafSmartAuth",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CafSmartAuth0A11FailureTypeO8rawValueSSvg",
+                "mangledName": "$s12CafSmartAuth0A11FailureTypeO8rawValueSSvg",
+                "moduleName": "CafSmartAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CafSmartAuth.CafFailureType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CafFailureType",
+                    "printedName": "CafSmartAuth.CafFailureType",
+                    "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CafSmartAuth0A11FailureTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s12CafSmartAuth0A11FailureTypeO8allCasesSayACGvpZ",
+            "moduleName": "CafSmartAuth",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CafSmartAuth.CafFailureType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CafSmartAuth0A11FailureTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s12CafSmartAuth0A11FailureTypeO8allCasesSayACGvgZ",
+                "moduleName": "CafSmartAuth",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12CafSmartAuth0A11FailureTypeO",
+        "mangledName": "$s12CafSmartAuth0A11FailureTypeO",
+        "moduleName": "CafSmartAuth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CafSmartAuth.CafFailureType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CafFailureType",
+                        "printedName": "CafSmartAuth.CafFailureType",
+                        "usr": "s:12CafSmartAuth0A11FailureTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -8969,6 +10354,27 @@
       "value": "\"result\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1273,
+      "length": 12,
+      "value": "\"stackTrace\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1315,
+      "length": 13,
+      "value": "\"mobileToken\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalyticsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1357,
+      "length": 12,
+      "value": "\"entrypoint\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-utils\/CafKeyChainManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1879,
@@ -9064,7 +10470,7 @@
       "kind": "StringLiteral",
       "offset": 477,
       "length": 7,
-      "value": "\"1.2.1\""
+      "value": "\"1.2.2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-sdks\/caf-smart-auth\/CafSmartAuth\/Input\/CafSmartAuthSdk.swift",
@@ -9107,6 +10513,83 @@
       "offset": 409,
       "length": 4,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4568,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4663,
+      "length": 19,
+      "value": "\"too_much_movement\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4778,
+      "length": 12,
+      "value": "\"too_bright\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4878,
+      "length": 10,
+      "value": "\"too_dark\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4978,
+      "length": 17,
+      "value": "\"misaligned_face\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5076,
+      "length": 13,
+      "value": "\"eyes_closed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5174,
+      "length": 14,
+      "value": "\"face_too_far\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5283,
+      "length": 16,
+      "value": "\"face_too_close\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5394,
+      "length": 12,
+      "value": "\"sunglasses\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5493,
+      "length": 15,
+      "value": "\"obscured_face\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-models\/CafCommonModels.swift",
+      "kind": "StringLiteral",
+      "offset": 5585,
+      "length": 16,
+      "value": "\"multiple_faces\""
     },
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-sdks\/caf-smart-auth\/CafSmartAuth\/Controller\/Authentications\/CodeAuthentication\/Constants\/CafCodeAuthenticationConstants.swift",
@@ -10980,7 +12463,7 @@
     {
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalytics.swift",
       "kind": "Dictionary",
-      "offset": 505,
+      "offset": 540,
       "length": 3,
       "value": "[]"
     },
@@ -10988,6 +12471,20 @@
       "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 618,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/caf-mobile-pipelines\/caf-mobile-pipelines\/monorepo\/caf-modules\/caf-commons\/caf-analytics\/CafAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
       "length": 14,
       "value": "\"install_guid\""
     },

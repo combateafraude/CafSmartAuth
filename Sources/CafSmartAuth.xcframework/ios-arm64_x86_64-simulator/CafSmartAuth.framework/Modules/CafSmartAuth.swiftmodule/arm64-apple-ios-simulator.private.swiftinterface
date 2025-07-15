@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CafSmartAuth
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CafSmartAuth
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AdSupport
 @_exported import CafSmartAuth
 import CafSolutions
@@ -19,8 +19,8 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public typealias CafVerifyPolicyResponse = (isAuthorized: Swift.Bool, attestation: Swift.String, attemptId: Swift.String?)
-public typealias CafLoadingLiveness = (Swift.Bool)
-public typealias CafLoadedLiveness = (Swift.Bool)
+public typealias CafLoadingLiveness = Swift.Bool
+public typealias CafLoadedLiveness = Swift.Bool
 public struct CafSmartAuthErrorResult : Swift.Error {
   public let error: CafSmartAuth.CafSmartAuthError
   public let attemptId: Swift.String
@@ -75,20 +75,62 @@ public enum CafSdkPlatform : Swift.String {
     get
   }
 }
-public struct CafSDKFailure : Swift.Encodable {
-  public init(errorType: CafSmartAuth.CafErrorType?, description: Swift.String?)
-  public let errorType: CafSmartAuth.CafErrorType?
+public struct CafSDKError : Swift.Encodable {
+  public init(errorType: CafSmartAuth.CafErrorType, description: Swift.String?)
+  public let errorType: CafSmartAuth.CafErrorType
   public let description: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public enum CafErrorType : Swift.String, Swift.Encodable {
+public struct CafSDKFailure : Swift.Encodable {
+  public init(signedResponse: Swift.String?, failureReason: CafSmartAuth.CafFailureType, description: Swift.String?)
+  public let signedResponse: Swift.String?
+  public let failureReason: CafSmartAuth.CafFailureType
+  public let description: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum CafErrorType : Swift.String, Swift.Encodable, Swift.CaseIterable {
   case unsupportedDevice
   case cameraPermission
   case networkException
   case serverException
   case tokenException
+  case captureAlreadyActiveException
+  case unexpectedErrorException
+  case userTimeoutException
+  case imageNotFoundException
+  case tooManyRequestsException
+  case unknownException
+  case libraryException
+  case permissionException
+  case invalidResponseException
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [CafSmartAuth.CafErrorType]
   public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [CafSmartAuth.CafErrorType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CafFailureType : Swift.String, Swift.Encodable, Swift.CaseIterable {
+  case unknown
+  case tooMuchMovement
+  case tooBright
+  case tooDark
+  case misalignedFace
+  case eyesClosed
+  case faceTooFar
+  case faceTooClose
+  case sunglasses
+  case obscuredFace
+  case multipleFaces
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CafSmartAuth.CafFailureType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [CafSmartAuth.CafFailureType] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
@@ -194,6 +236,9 @@ extension CafSmartAuth.CafSdkPlatform : Swift.RawRepresentable {}
 extension CafSmartAuth.CafErrorType : Swift.Equatable {}
 extension CafSmartAuth.CafErrorType : Swift.Hashable {}
 extension CafSmartAuth.CafErrorType : Swift.RawRepresentable {}
+extension CafSmartAuth.CafFailureType : Swift.Equatable {}
+extension CafSmartAuth.CafFailureType : Swift.Hashable {}
+extension CafSmartAuth.CafFailureType : Swift.RawRepresentable {}
 extension CafSmartAuth.CafFilterStyle : Swift.Equatable {}
 extension CafSmartAuth.CafFilterStyle : Swift.Hashable {}
 extension CafSmartAuth.CafFilterStyle : Swift.RawRepresentable {}
