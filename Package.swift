@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/combateafraude/FaceLiveness.git",
-            .exact("7.2.1")
+            .exact("7.3.0")
         ),
         .package(
             url: "https://github.com/fingerprintjs/fingerprintjs-pro-ios.git",
@@ -23,7 +23,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/combateafraude/CafSolutions.git",
-            .exact("2.0.3")
+            .exact("2.0.6")
         )
     ],
     targets: [

@@ -7,8 +7,8 @@
 | Deployment Info | Version       |
 | --------------- | ------------- |
 | iOS Target      | 13.0+         |
-| Xcode           | 15.4+         |
-| Swift           | 5.10+         |
+| Xcode           | 16.4+         |
+| Swift           | 5.10+        |
 
 - A valid [CAF mobileToken](https://docs.caf.io/sdks/access-token).
 - Swift Package Manager integrated into your Xcode project.
@@ -22,7 +22,7 @@ Make sure to add the following entries to your app's `Info.plist` file, explaini
 
 ## Swift Package Manager (SPM) SDK Installation
 
-To add **CafSmartAuth 1.1.0** to your project using **Swift Package Manager**:
+To add **CafSmartAuth 1.2.3** to your project using **Swift Package Manager**:
 
 1. Open your Xcode project.
 2. Navigate to **File > Add Packages**.
@@ -30,7 +30,7 @@ To add **CafSmartAuth 1.1.0** to your project using **Swift Package Manager**:
     ```console
     https://github.com/combateafraude/CafSmartAuth.git
     ```
-4. Select the version `1.1.0` or choose the "Up to Next Major" option to ensure your project will automatically get future compatible updates.
+4. Select the version `1.2.3` or choose the "Up to Next Major" option to ensure your project will automatically get future compatible updates.
 5. Complete the steps, and Xcode will automatically integrate the **CafSmartAuth** SDK into your project.
 
 ## CocoaPods
