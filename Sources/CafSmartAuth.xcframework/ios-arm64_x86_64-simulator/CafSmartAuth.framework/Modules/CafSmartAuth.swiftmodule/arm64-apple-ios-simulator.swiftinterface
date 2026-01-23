@@ -2,22 +2,30 @@
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CafSmartAuth
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AVFoundation
 import AdSupport
 @_exported import CafSmartAuth
 import CafSolutions
+import CommonCrypto
 import CommonCrypto/*.CC_LONG*/
 import CommonCrypto/*.CC_MD5*/
 import CommonCrypto/*.CC_MD5_DIGEST_LENGTH*/
 import CoreLocation
+import Darwin
+import DeveloperToolsSupport
 import FaceLiveness
 import FingerprintPro
 import Foundation
+import MachO
+import ObjectiveC
 import Security
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import ObjectiveC.runtime
 public typealias CafVerifyPolicyResponse = (isAuthorized: Swift.Bool, attestation: Swift.String, attemptId: Swift.String?)
 public typealias CafLoadingLiveness = Swift.Bool
 public typealias CafLoadedLiveness = Swift.Bool
@@ -51,6 +59,31 @@ extension CafSmartAuth.CafSmartAuthSdk {
     public func setThemeConfigurator(_ configurator: CafSmartAuth.CafThemeConfigurator) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
     @objc deinit
   }
+}
+@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResult : ObjectiveC.NSObject, Swift.Encodable {
+  public var isAuthorized: Swift.Bool?
+  public var attestation: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResultError : ObjectiveC.NSObject, Swift.Encodable {
+  public var error: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CafInstructionsConfiguration {
+  public var enabled: Swift.Bool
+  public var captureTitle: Swift.String?
+  public var captureDescriptionText: Swift.String?
+  public var captureSteps: [Swift.String]?
+  public var captureButtonTitle: Swift.String?
+  public var captureHeaderImage: UIKit.UIImage?
+  public var uploadTitle: Swift.String?
+  public var uploadDescriptionText: Swift.String?
+  public var uploadSteps: [Swift.String]?
+  public var uploadButtonTitle: Swift.String?
+  public var uploadHeaderImage: UIKit.UIImage?
+  public init(enabled: Swift.Bool = true, captureTitle: Swift.String? = nil, captureDescriptionText: Swift.String? = nil, captureSteps: [Swift.String]? = nil, captureButtonTitle: Swift.String? = nil, captureHeaderImage: UIKit.UIImage? = nil, uploadTitle: Swift.String? = nil, uploadDescriptionText: Swift.String? = nil, uploadSteps: [Swift.String]? = nil, uploadButtonTitle: Swift.String? = nil, uploadHeaderImage: UIKit.UIImage? = nil)
 }
 public enum CafEnvironment : Swift.Int {
   case dev
@@ -103,6 +136,11 @@ public enum CafErrorType : Swift.String, Swift.Encodable, Swift.CaseIterable {
   case libraryException
   case permissionException
   case invalidResponseException
+  case cameraException
+  case certificateException
+  case invalidOptionsException
+  case securityException
+  case faceAuthentication
   public init?(rawValue: Swift.String)
   public typealias AllCases = [CafSmartAuth.CafErrorType]
   public typealias RawValue = Swift.String
@@ -135,16 +173,36 @@ public enum CafFailureType : Swift.String, Swift.Encodable, Swift.CaseIterable {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResult : ObjectiveC.NSObject, Swift.Encodable {
-  public var isAuthorized: Swift.Bool?
-  public var attestation: Swift.String?
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+extension UIKit.UIColor {
+  convenience public init(byHex: Swift.String)
 }
-@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResultError : ObjectiveC.NSObject, Swift.Encodable {
-  public var error: Swift.String
+final public class CafConfirmationNextStepContent {
+  final public var title: Swift.String?
+  final public var description: Swift.String?
+  final public var buttonTitle: Swift.String?
+  final public var image: UIKit.UIImage?
+  public init(title: Swift.String? = nil, description: Swift.String? = nil, buttonTitle: Swift.String? = nil, image: UIKit.UIImage? = nil)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ColorConfiguration {
+  public let primaryColor: Swift.String?
+  public let secondaryColor: Swift.String?
+  public let contentColor: Swift.String?
+  public let backgroundColor: Swift.String?
+  public let mediumColor: Swift.String?
+  public let dialogBackgroundColor: Swift.String?
+  public let dialogBorderColor: Swift.String?
+  public init(primaryColor: Swift.String? = nil, secondaryColor: Swift.String? = nil, contentColor: Swift.String? = nil, backgroundColor: Swift.String? = nil, mediumColor: Swift.String? = nil, dialogBackgroundColor: Swift.String? = nil, dialogBorderColor: Swift.String? = nil)
+}
+public enum CafLogLevel : Swift.String {
+  case debug
+  case usage
+  case info
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public enum CafSmartAuthError : Swift.Error {
   case PermissionReason(Swift.String)
@@ -239,6 +297,9 @@ extension CafSmartAuth.CafErrorType : Swift.RawRepresentable {}
 extension CafSmartAuth.CafFailureType : Swift.Equatable {}
 extension CafSmartAuth.CafFailureType : Swift.Hashable {}
 extension CafSmartAuth.CafFailureType : Swift.RawRepresentable {}
+extension CafSmartAuth.CafLogLevel : Swift.Equatable {}
+extension CafSmartAuth.CafLogLevel : Swift.Hashable {}
+extension CafSmartAuth.CafLogLevel : Swift.RawRepresentable {}
 extension CafSmartAuth.CafFilterStyle : Swift.Equatable {}
 extension CafSmartAuth.CafFilterStyle : Swift.Hashable {}
 extension CafSmartAuth.CafFilterStyle : Swift.RawRepresentable {}
