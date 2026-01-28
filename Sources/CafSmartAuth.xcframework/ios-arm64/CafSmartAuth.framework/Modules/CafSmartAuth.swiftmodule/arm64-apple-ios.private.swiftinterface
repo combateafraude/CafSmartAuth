@@ -17,6 +17,7 @@ import FaceLiveness
 import FingerprintPro
 import Foundation
 import MachO
+import Network
 import ObjectiveC
 import Security
 import Swift
@@ -60,17 +61,6 @@ extension CafSmartAuth.CafSmartAuthSdk {
     @objc deinit
   }
 }
-@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResult : ObjectiveC.NSObject, Swift.Encodable {
-  public var isAuthorized: Swift.Bool?
-  public var attestation: Swift.String?
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResultError : ObjectiveC.NSObject, Swift.Encodable {
-  public var error: Swift.String
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-}
 public struct CafInstructionsConfiguration {
   public var enabled: Swift.Bool
   public var captureTitle: Swift.String?
@@ -84,6 +74,14 @@ public struct CafInstructionsConfiguration {
   public var uploadButtonTitle: Swift.String?
   public var uploadHeaderImage: UIKit.UIImage?
   public init(enabled: Swift.Bool = true, captureTitle: Swift.String? = nil, captureDescriptionText: Swift.String? = nil, captureSteps: [Swift.String]? = nil, captureButtonTitle: Swift.String? = nil, captureHeaderImage: UIKit.UIImage? = nil, uploadTitle: Swift.String? = nil, uploadDescriptionText: Swift.String? = nil, uploadSteps: [Swift.String]? = nil, uploadButtonTitle: Swift.String? = nil, uploadHeaderImage: UIKit.UIImage? = nil)
+}
+final public class CafConfirmationNextStepContent {
+  final public var title: Swift.String?
+  final public var description: Swift.String?
+  final public var buttonTitle: Swift.String?
+  final public var image: UIKit.UIImage?
+  public init(title: Swift.String? = nil, description: Swift.String? = nil, buttonTitle: Swift.String? = nil, image: UIKit.UIImage? = nil)
+  @objc deinit
 }
 public enum CafEnvironment : Swift.Int {
   case dev
@@ -173,17 +171,6 @@ public enum CafFailureType : Swift.String, Swift.Encodable, Swift.CaseIterable {
     get
   }
 }
-extension UIKit.UIColor {
-  convenience public init(byHex: Swift.String)
-}
-final public class CafConfirmationNextStepContent {
-  final public var title: Swift.String?
-  final public var description: Swift.String?
-  final public var buttonTitle: Swift.String?
-  final public var image: UIKit.UIImage?
-  public init(title: Swift.String? = nil, description: Swift.String? = nil, buttonTitle: Swift.String? = nil, image: UIKit.UIImage? = nil)
-  @objc deinit
-}
 public struct ColorConfiguration {
   public let primaryColor: Swift.String?
   public let secondaryColor: Swift.String?
@@ -194,6 +181,14 @@ public struct ColorConfiguration {
   public let dialogBorderColor: Swift.String?
   public init(primaryColor: Swift.String? = nil, secondaryColor: Swift.String? = nil, contentColor: Swift.String? = nil, backgroundColor: Swift.String? = nil, mediumColor: Swift.String? = nil, dialogBackgroundColor: Swift.String? = nil, dialogBorderColor: Swift.String? = nil)
 }
+extension UIKit.UIColor {
+  convenience public init(byHex: Swift.String)
+}
+public protocol CafInstructionsAnalyticsDelegate : AnyObject {
+  func cameraPermissionRequested()
+  func cameraPermissionGranted()
+  func cameraPermissionDenied()
+}
 public enum CafLogLevel : Swift.String {
   case debug
   case usage
@@ -203,6 +198,17 @@ public enum CafLogLevel : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResult : ObjectiveC.NSObject, Swift.Encodable {
+  public var isAuthorized: Swift.Bool?
+  public var attestation: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResultError : ObjectiveC.NSObject, Swift.Encodable {
+  public var error: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum CafSmartAuthError : Swift.Error {
   case PermissionReason(Swift.String)
