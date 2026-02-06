@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		wvriopAPk9/fxl/3GqWzCCK2K0Y=
+		PVIcxEr4sOwl/rPFMz+cMahj+G4=
 		</data>
 		<key>Headers/CafSmartAuth-Swift.h</key>
 		<data>
-		6sZYOOzm7WbMppsIAh5AFvszz8Q=
+		ziftU6U3sfDTk5kS6Rb0v+d7+Yw=
 		</data>
 		<key>Headers/CafSmartAuth.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		w1k+06F9JW33uOSY+EwbQ7tvFRE=
+		m7lBHKoIWe+gx8QQGd1xPPSVEE0=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		NSSHTLbiyA3ho8y5/qy29eHN/6Q=
+		YjaYk9a6oYHCyNuKI/tpg0ThHg4=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fS5YcJG2gezQSwn9zTi5Aetk6yA=
+		ofL3sNUrPWdXDhdAJHTZgT7UuA8=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wTU3Np6RP9qHlJcEwEJs2maJ/ak=
+		YT1UviPEigGgiOLablPds6/neCw=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fS5YcJG2gezQSwn9zTi5Aetk6yA=
+		ofL3sNUrPWdXDhdAJHTZgT7UuA8=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Prgc9vg1N/XrlRkwlB/WxvIJ6Bc=
+		xeTCZROzbEYmaxh9j3/5rY26kro=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		NSSHTLbiyA3ho8y5/qy29eHN/6Q=
+		YjaYk9a6oYHCyNuKI/tpg0ThHg4=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1MDETLzIY7fdb6xmpBkDlmZ836w=
+		fb1vUzV3bi+84b2icVXeVD0PpxA=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5SCf4HI0dlx0ryE9niKBT1UCSEI=
+		oCpY5eWxVXzGCSEmpaRDW1v5V9M=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1MDETLzIY7fdb6xmpBkDlmZ836w=
+		fb1vUzV3bi+84b2icVXeVD0PpxA=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0iDEOlgKcAZFETo/A9eheHBX2J0=
+		hY1ub57L7TrNZrBXM2lsoiixDHI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -125,14 +125,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGyZs47ztToD0KH7Th/FXJLHt65k5u7rDx+7klA/Bos=
+			hvk+EaoCipn5/lVIfLyZeeaCbCajM8ZJyotf8eBT8Z0=
 			</data>
 		</dict>
 		<key>Headers/CafSmartAuth-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X3/ykTImVQ/7f3lF4+7D9U7/+lf9/dBW9sEXrso4csU=
+			CTYYjSagk9KB5DdiwBfXOoPW63Un30UG3DvCEijg6bM=
 			</data>
 		</dict>
 		<key>Headers/CafSmartAuth.h</key>
@@ -146,70 +146,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iLfZ+iMoKsJtLzX9koR1TDe8TmjhTgeimwy+scK9/vQ=
+			QzX4gXJzSt36nQLgGhFeHwNCqceamfKyDtc6mVWyYeU=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+BXwmZioPzuteU9crXdzqWCSzmBYxkKDNtXwAUnB3Go=
+			sG9Wz3aADqxDVp/Q/Hve/Srw9Ij97OkUi4LLv9h9KFg=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C2v3LEZzy5Vws1+gtWiF5hSV/hRsJrveC1ZIvXK2Q/k=
+			Xwp+/9/sXNeam5KokZ8Z55fj/HiOfUZBkWl7uYZwjcY=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+BXwmZioPzuteU9crXdzqWCSzmBYxkKDNtXwAUnB3Go=
+			sG9Wz3aADqxDVp/Q/Hve/Srw9Ij97OkUi4LLv9h9KFg=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MkeMUHH9EIbGA4lb1I3Fg2sI8SFntWGAJB8KZKAclVY=
+			he18+FZP78Z2txkyDF5KzAAOW/gtqRgdTCfUKG+fFLY=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iLfZ+iMoKsJtLzX9koR1TDe8TmjhTgeimwy+scK9/vQ=
+			QzX4gXJzSt36nQLgGhFeHwNCqceamfKyDtc6mVWyYeU=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nWo6LvL9ruraS/1/n7o0Zst7rhqP+vYOyLasJ56wH10=
+			WEmPBIcx4RCi6m+5OfwCU8ywq7HFVN/dDPGSZwJpYMc=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KWso4an3zOcPRPl2qCfdPJmzMLiKMSFnNe0EKf8a7j0=
+			H+VgktayxdmqqjMAgbTg0A8cu1NbzUviQkeZbEYI5jY=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nWo6LvL9ruraS/1/n7o0Zst7rhqP+vYOyLasJ56wH10=
+			WEmPBIcx4RCi6m+5OfwCU8ywq7HFVN/dDPGSZwJpYMc=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4B/Hln6ReDWjU2D2Zm0nmO6/6pwqIyGNG2yr27FwShI=
+			gC5Gv1Jx1JcORQkBE1gydq+wxhDGFRZh7P5aVXAKMg4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

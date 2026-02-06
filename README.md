@@ -22,7 +22,7 @@ Make sure to add the following entries to your app's `Info.plist` file, explaini
 
 ## Swift Package Manager (SPM) SDK Installation
 
-To add **CafSmartAuth 1.2.5** to your project using **Swift Package Manager**:
+To add **CafSmartAuth 1.3.0** to your project using **Swift Package Manager**:
 
 1. Open your Xcode project.
 2. Navigate to **File > Add Packages**.
@@ -30,7 +30,7 @@ To add **CafSmartAuth 1.2.5** to your project using **Swift Package Manager**:
     ```console
     https://github.com/combateafraude/CafSmartAuth.git
     ```
-4. Select the version `1.2.5` or choose the "Up to Next Major" option to ensure your project will automatically get future compatible updates.
+4. Select the version `1.3.0` or choose the "Up to Next Major" option to ensure your project will automatically get future compatible updates.
 5. Complete the steps, and Xcode will automatically integrate the **CafSmartAuth** SDK into your project.
 
 ## CocoaPods
