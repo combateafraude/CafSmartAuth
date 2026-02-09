@@ -6,7 +6,7 @@
 
 | Deployment Info | Version       |
 | --------------- | ------------- |
-| iOS Target      | 13.0+         |
+| iOS Target      | 15.0+         |
 | Xcode           | 16.4+         |
 | Swift           | 5.10+        |
 
@@ -46,7 +46,7 @@ To add **CafSmartAuth 1.3.0** to your project using **Swift Package Manager**:
 3. Create or update your Podfile with the following content:
 
 ```bash
-   platform :ios, '13.0'
+   platform :ios, '15.0'
     use_frameworks!
 
     target 'YourAppTarget' do

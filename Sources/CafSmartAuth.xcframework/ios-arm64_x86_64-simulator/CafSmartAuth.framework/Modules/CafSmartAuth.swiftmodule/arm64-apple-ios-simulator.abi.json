@@ -14368,7 +14368,7 @@
       "kind": "StringLiteral",
       "offset": 477,
       "length": 7,
-      "value": "\"1.2.5\""
+      "value": "\"1.3.0\""
     },
     {
       "filePath": "\/Users\/marcus.seixas\/Documents\/ios_project\/caf-ios2\/caf-ios\/caf-sdks\/caf-smart-auth\/CafSmartAuth\/Input\/CafSmartAuthSdk.swift",
