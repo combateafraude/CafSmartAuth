@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		QU0MUG5dh9TgZjBg0VbvYfm76hU=
+		senBs7HgCP3XxcKm48q6D8J/xgM=
 		</data>
 		<key>Headers/CafSmartAuth-Swift.h</key>
 		<data>
-		ziftU6U3sfDTk5kS6Rb0v+d7+Yw=
+		bS1jX6wHsKCmGSgv3E5Cu/fOzKA=
 		</data>
 		<key>Headers/CafSmartAuth.h</key>
 		<data>
@@ -18,61 +18,57 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VqDM7q9ZVZXArUFwyEX96wALNBQ=
+		HKOKKeCIlOkFzvjmKlgD8Xdv/rw=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+2T1aAZwKTC8UO1U8N4Hs/BPV4M=
+		lZlfiQ51dNa8dNa20FxMrYr9+tA=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jf7IlpveHvUQe0i+2E6OXwGc34U=
+		4HIZLGCnzHLe583UfcaNtmKq7CU=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xibl9r3ELCLvGFgvj4IWudQxJMA=
+		j9/6k9N41EZGb2u3U+dpDdq70JE=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jf7IlpveHvUQe0i+2E6OXwGc34U=
+		4HIZLGCnzHLe583UfcaNtmKq7CU=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4Z0g9qEdMlk6YgPvvV7sSFvQv8o=
+		XqFQQWritO03wrjHehwWykU5HPA=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ay9intaFQWPPR7svQE+RvqUgJ6o=
+		oDEEwCO+Hg878ob9S4jLdsjC15c=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Rir4un5TXRRKIRRIR/ZBpMHFJz8=
+		YSrxmeTXR0Cs1K3DMwRbPHnOdfg=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		P36+Lp4y/QBeaAs+kyvBxGupnOM=
+		ifZBIrKskqov7ilzEqjDGSZEmz4=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Rir4un5TXRRKIRRIR/ZBpMHFJz8=
+		YSrxmeTXR0Cs1K3DMwRbPHnOdfg=
 		</data>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dLaAQQZ7OO6WrXMGos8iuxnrWhU=
+		/CXR3zIrknIe0vCm0AQdfBqOI1o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		0oDQfcTLAm2KEljaG6aWJjx2lYA=
 		</data>
-		<key>Spininng.gif</key>
-		<data>
-		AoCOEaAPe6+WgphRTHByXqufc0w=
-		</data>
 		<key>en.lproj/CDSStrings.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kFp+MDtzaC0RU8KrRtDGvdd/IVM=
+			zBhoHvgPJSNfAzgA6qGGXxOI97I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -90,16 +86,20 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			139+vQ8W/2fy2QF3VaDQ2VMIl88=
+			LyY2xd74JkQdO9z/Mc/J+wjLLxc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>loading_spinner_1.webp</key>
+		<data>
+		+4wIS7pjGq7H0gTmcBYKA9aDjow=
+		</data>
 		<key>pt-BR.lproj/CDSStrings.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wF/tV7s9QmxzBKAr26Zo8Qq7l+Q=
+			E3b5rnh8ng8Kh9J2M9aTBfzYGtM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/YB6+fpdl91y+S0CSFO02hg/RTU=
+			a/DEld2VrMiURIFCTcM457UESWA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -129,14 +129,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nDE3lndTYPH34ZGscpgYlqsWink9n2ZTuyEXyLXECx0=
+			fpolhKMK6sEu5ya0jYvYzIiiI96+xe8WcRKthrSfa/Q=
 			</data>
 		</dict>
 		<key>Headers/CafSmartAuth-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CTYYjSagk9KB5DdiwBfXOoPW63Un30UG3DvCEijg6bM=
+			1lt1K+f6PUaSJT0uY5knFl+WCwziCGzkeIz2A5Kl/CY=
 			</data>
 		</dict>
 		<key>Headers/CafSmartAuth.h</key>
@@ -150,70 +150,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6s5RLXe6pMUf6iLjjOD7aI0A2gVrYb2yYD8ZAKoh9/8=
+			AMIK+m6ooVzbZq6gz+aCj8b5dIBSZQHbP93fZ9cJRQ4=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oMbRPxuhKRK7b/7Rs6Qjw5jtV3XmgfEeOrK1N6OLN9s=
+			FT90PBUSDHsvy0mtQfX85C/FRMlS3w1ouUsPCqyPbCM=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lmcIpnL7y3UxT1CK/p9CcJUvl9V7FC756oNMDg8xrrE=
+			IJzmsv6AYSLWuhyvbwrsCvyvA6NUvzHzgm1tvsHL4KY=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oMbRPxuhKRK7b/7Rs6Qjw5jtV3XmgfEeOrK1N6OLN9s=
+			FT90PBUSDHsvy0mtQfX85C/FRMlS3w1ouUsPCqyPbCM=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FqNBxatjPYSES5HX2BpzN9QwxzyvgJuFpcyEP3+dF6s=
+			Vim2Mso1rd9lyL5sg4Fzau13FDBN26/XQdI3oAjHVd8=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/MHsKep914WrNOA+z3Txa5bTJYl+FsltBudY+iYR+Y=
+			MEd3A2o7Dk3hHl/4Q42E/0lXr5O67BMk6I5+AW5j840=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pwtDOjGWEHd1Iu36FV1mKXHolwvaV9gmR9DAu2NztyY=
+			CiJx/UHRqBvOHxy0Xb95gKUKFztVMO2GembPo5KZM0E=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m/Hz//8oXb+Vj31sNFylHenouicQh5w+Jk7EGHf4Tmg=
+			R5QWjJl7sIRpL9TkDhT7WU/vt+FTvaZziHz4A/nEF3I=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pwtDOjGWEHd1Iu36FV1mKXHolwvaV9gmR9DAu2NztyY=
+			CiJx/UHRqBvOHxy0Xb95gKUKFztVMO2GembPo5KZM0E=
 			</data>
 		</dict>
 		<key>Modules/CafSmartAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IDRQud6TnKU1Rbv/0gmFlGb87HS4zn4ehB7QgtblYNI=
+			6qah+0QMMwKYrEyrOyom26K+5iJk5jsawmU1bp6S0l8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -223,18 +223,11 @@
 			0DnYH3LLnwRRDu8J3+NqDttAFs2sJS9zx+xkHlitzyA=
 			</data>
 		</dict>
-		<key>Spininng.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ui9X+RNMIZfDqBoVp9WlAfEMZbgvLQ300OCcSI4te54=
-			</data>
-		</dict>
 		<key>en.lproj/CDSStrings.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0zPzsYHFmGZVbNYiKzt7MwIoQU8PYPWFQraeJ73euaE=
+			05HxnLUwZD/QjRXP7fnGxCDp7ZJua5jrk8iBm9kJ/SE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -252,16 +245,23 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zjLGgkm5cel2BZ3mr+FN0XTS6mmNZ6Lx61nGDetdC0k=
+			0+z7nZfE3+nEKM3AKa/lefrRwXoJoj2kFOyb2jgysLs=
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>loading_spinner_1.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y9dO6upNyHXKBJe1KNkJR2NKrKytR292cggt4wEFRT8=
+			</data>
 		</dict>
 		<key>pt-BR.lproj/CDSStrings.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4e0iHLCUd/zGImYZuS0ABuUQ++EwBrQcal1jk1ibYtM=
+			PBKFxQbc0gdGYdztqFIoF1iI+yW/xPqozBuHAGTscTE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -279,7 +279,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tNKRfqrTxtXorYquYuloncBWfvxKqFnDyvBzPvL5y/Y=
+			dclNpLLAlz4z/8pbHQuZTjxOOBYem2+ykjqm4KItGNY=
 			</data>
 			<key>optional</key>
 			<true/>
