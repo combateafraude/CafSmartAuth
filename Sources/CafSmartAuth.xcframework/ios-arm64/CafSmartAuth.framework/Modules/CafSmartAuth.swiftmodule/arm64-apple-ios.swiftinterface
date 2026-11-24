@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CafSmartAuth
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.4.2 effective-5.10 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CafSmartAuth
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4.2
 import AVFoundation
 import AdSupport
 @_exported import CafSmartAuth
@@ -28,118 +28,100 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import ObjectiveC.runtime
-public typealias CafVerifyPolicyResponse = (isAuthorized: Swift.Bool, attestation: Swift.String, attemptId: Swift.String?)
-public typealias CafLoadingLiveness = Swift.Bool
-public typealias CafLoadedLiveness = Swift.Bool
-public struct CafSmartAuthErrorResult : Swift.Error {
-  public let error: CafSmartAuth.CafSmartAuthError
-  public let attemptId: Swift.String
+public typealias CafVerifyPolicyResponse = (isAuthorized: Swift::Bool, attestation: Swift::String, attemptId: Swift::String?)
+public typealias CafLoadingLiveness = Swift::Bool
+public typealias CafLoadedLiveness = Swift::Bool
+public struct CafSmartAuthErrorResult : Swift::Error {
+  public let error: CafSmartAuth::CafSmartAuthError
+  public let attemptId: Swift::String
 }
-public typealias CafVerifyPolicyResult = CafSmartAuth.CafSmartAuthResult<CafSmartAuth.CafVerifyPolicyResponse, CafSmartAuth.CafVerifyPolicyResponse, CafSmartAuth.CafSmartAuthErrorResult, CafSmartAuth.CafLoadingLiveness, CafSmartAuth.CafLoadedLiveness>
-public typealias CafVerifyPolicyListener = (CafSmartAuth.CafVerifyPolicyResult) -> Swift.Void
-extension UIKit.UIColor {
-  convenience public init(byHex: Swift.String)
+public typealias CafVerifyPolicyResult = CafSmartAuth::CafSmartAuthResult<CafSmartAuth::CafVerifyPolicyResponse, CafSmartAuth::CafVerifyPolicyResponse, CafSmartAuth::CafSmartAuthErrorResult, CafSmartAuth::CafLoadingLiveness, CafSmartAuth::CafLoadedLiveness>
+public typealias CafVerifyPolicyListener = (CafSmartAuth::CafVerifyPolicyResult) -> Swift::Void
+extension UIKit::UIColor {
+  convenience public init(byHex: Swift::String)
 }
 public struct ColorConfiguration {
-  public let primaryColor: Swift.String?
-  public let secondaryColor: Swift.String?
-  public let contentColor: Swift.String?
-  public let backgroundColor: Swift.String?
-  public let mediumColor: Swift.String?
-  public let dialogBackgroundColor: Swift.String?
-  public let dialogBorderColor: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(primaryColor: Swift.String? = nil, secondaryColor: Swift.String? = nil, contentColor: Swift.String? = nil, backgroundColor: Swift.String? = nil, mediumColor: Swift.String? = nil, dialogBackgroundColor: Swift.String? = nil, dialogBorderColor: Swift.String? = nil)
-  #endif
+  public let primaryColor: Swift::String?
+  public let secondaryColor: Swift::String?
+  public let contentColor: Swift::String?
+  public let backgroundColor: Swift::String?
+  public let mediumColor: Swift::String?
+  public let dialogBackgroundColor: Swift::String?
+  public let dialogBorderColor: Swift::String?
+  public init(primaryColor: Swift::String? = nil, secondaryColor: Swift::String? = nil, contentColor: Swift::String? = nil, backgroundColor: Swift::String? = nil, mediumColor: Swift::String? = nil, dialogBackgroundColor: Swift::String? = nil, dialogBorderColor: Swift::String? = nil)
 }
 public protocol CafInstructionsAnalyticsDelegate : AnyObject {
   func cameraPermissionRequested()
   func cameraPermissionGranted()
   func cameraPermissionDenied()
 }
-public enum CafLogLevel : Swift.String {
+public enum CafLogLevel : Swift::String {
   case debug
   case usage
   case info
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
     get
   }
 }
 public enum FileIntegrityCheck {
-  case bundleID(Swift.String)
-  case mobileProvision(Swift.String)
-  case machO(Swift.String, Swift.String)
+  case bundleID(Swift::String)
+  case mobileProvision(Swift::String)
+  case machO(Swift::String, Swift::String)
 }
-extension CafSmartAuth.FileIntegrityCheck {
-  public var description: Swift.String {
+extension CafSmartAuth::FileIntegrityCheck {
+  public var description: Swift::String {
     get
   }
 }
-public typealias FileIntegrityCheckResult = (result: Swift.Bool, hitChecks: [CafSmartAuth.FileIntegrityCheck])
+public typealias FileIntegrityCheckResult = (result: Swift::Bool, hitChecks: [CafSmartAuth::FileIntegrityCheck])
 public enum IntegrityCheckerImageTarget {
   case `default`
-  case custom(Swift.String)
+  case custom(Swift::String)
 }
-extension UIKit.UIImage {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func gifImage(from data: Foundation.Data) -> UIKit.UIImage?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func gifImage(named name: Swift.String, in bundle: Foundation.Bundle) -> UIKit.UIImage?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func framedImageSequence(folder: Swift.String, frameCount: Swift.Int, reversed: Swift.Bool = false, fileExtension: Swift.String = "png", in bundle: Foundation.Bundle) -> [UIKit.UIImage]?
-  #endif
+extension UIKit::UIImage {
+  public static func gifImage(from data: Foundation::Data) -> UIKit::UIImage?
+  public static func gifImage(named name: Swift::String, in bundle: Foundation::Bundle) -> UIKit::UIImage?
+  public static func framedImageSequence(folder: Swift::String, frameCount: Swift::Int, reversed: Swift::Bool = false, fileExtension: Swift::String = "png", in bundle: Foundation::Bundle) -> [UIKit::UIImage]?
 }
-public enum CafEnvironment : Swift.Int {
+public enum CafEnvironment : Swift::Int {
   case dev
   case beta
   case prod
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-extension CafSmartAuth.CafEnvironment {
-  public func toString() -> Swift.String
+extension CafSmartAuth::CafEnvironment {
+  public func toString() -> Swift::String
 }
-public enum CafSdkPlatform : Swift.String {
+public enum CafSdkPlatform : Swift::String {
   case nativeIos
   case reactNativeIos
   case flutterIos
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
     get
   }
 }
-public struct CafSDKError : Swift.Encodable, Swift.Error {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(errorType: CafSmartAuth.CafErrorType, description: Swift.String?)
-  #endif
-  public let errorType: CafSmartAuth.CafErrorType
-  public let description: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
+public struct CafSDKError : Swift::Encodable, Swift::Error {
+  public init(errorType: CafSmartAuth::CafErrorType, description: Swift::String?)
+  public let errorType: CafSmartAuth::CafErrorType
+  public let description: Swift::String?
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-public struct CafSDKFailure : Swift.Encodable {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(signedResponse: Swift.String?, failureReason: CafSmartAuth.CafFailureType, description: Swift.String?)
-  #endif
-  public let signedResponse: Swift.String?
-  public let failureReason: CafSmartAuth.CafFailureType
-  public let description: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
+public struct CafSDKFailure : Swift::Encodable {
+  public init(signedResponse: Swift::String?, failureReason: CafSmartAuth::CafFailureType, description: Swift::String?)
+  public let signedResponse: Swift::String?
+  public let failureReason: CafSmartAuth::CafFailureType
+  public let description: Swift::String?
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-public enum CafErrorType : Swift.String, Swift.Encodable, Swift.CaseIterable {
+public enum CafErrorType : Swift::String, Swift::Encodable, Swift::CaseIterable {
   case unsupportedDevice
   case cameraPermission
   case networkException
@@ -159,19 +141,18 @@ public enum CafErrorType : Swift.String, Swift.Encodable, Swift.CaseIterable {
   case invalidOptionsException
   case securityException
   case faceAuthentication
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias AllCases = [CafSmartAuth.CafErrorType]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [CafSmartAuth.CafErrorType] {
+  case livenessException
+  public init?(rawValue: Swift::String)
+  public typealias AllCases = [CafSmartAuth::CafErrorType]
+  public typealias RawValue = Swift::String
+  nonisolated public static var allCases: [CafSmartAuth::CafErrorType] {
     get
   }
-  public var rawValue: Swift.String {
+  public var rawValue: Swift::String {
     get
   }
 }
-public enum CafFailureType : Swift.String, Swift.Encodable, Swift.CaseIterable {
+public enum CafFailureType : Swift::String, Swift::Encodable, Swift::CaseIterable {
   case unknown
   case tooMuchMovement
   case tooBright
@@ -196,103 +177,91 @@ public enum CafFailureType : Swift.String, Swift.Encodable, Swift.CaseIterable {
   case timeout
   case userNotFound
   case processingFault
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias AllCases = [CafSmartAuth.CafFailureType]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [CafSmartAuth.CafFailureType] {
+  public init?(rawValue: Swift::String)
+  public typealias AllCases = [CafSmartAuth::CafFailureType]
+  public typealias RawValue = Swift::String
+  nonisolated public static var allCases: [CafSmartAuth::CafFailureType] {
     get
   }
-  public var rawValue: Swift.String {
+  public var rawValue: Swift::String {
     get
   }
 }
 final public class CafConfirmationNextStepContent {
-  final public var title: Swift.String?
-  final public var description: Swift.String?
-  final public var buttonTitle: Swift.String?
-  final public var image: UIKit.UIImage?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(title: Swift.String? = nil, description: Swift.String? = nil, buttonTitle: Swift.String? = nil, image: UIKit.UIImage? = nil)
-  #endif
+  final public var title: Swift::String?
+  final public var description: Swift::String?
+  final public var buttonTitle: Swift::String?
+  final public var image: UIKit::UIImage?
+  public init(title: Swift::String? = nil, description: Swift::String? = nil, buttonTitle: Swift::String? = nil, image: UIKit::UIImage? = nil)
   @objc deinit
 }
 public struct CafInstructionsConfiguration {
-  public var enabled: Swift.Bool
-  public var captureTitle: Swift.String?
-  public var captureDescriptionText: Swift.String?
-  public var captureSteps: [Swift.String]?
-  public var captureButtonTitle: Swift.String?
-  public var captureHeaderImage: UIKit.UIImage?
-  public var uploadTitle: Swift.String?
-  public var uploadDescriptionText: Swift.String?
-  public var uploadSteps: [Swift.String]?
-  public var uploadButtonTitle: Swift.String?
-  public var uploadHeaderImage: UIKit.UIImage?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(enabled: Swift.Bool = true, captureTitle: Swift.String? = nil, captureDescriptionText: Swift.String? = nil, captureSteps: [Swift.String]? = nil, captureButtonTitle: Swift.String? = nil, captureHeaderImage: UIKit.UIImage? = nil, uploadTitle: Swift.String? = nil, uploadDescriptionText: Swift.String? = nil, uploadSteps: [Swift.String]? = nil, uploadButtonTitle: Swift.String? = nil, uploadHeaderImage: UIKit.UIImage? = nil)
-  #endif
+  public var enabled: Swift::Bool
+  public var captureTitle: Swift::String?
+  public var captureDescriptionText: Swift::String?
+  public var captureSteps: [Swift::String]?
+  public var captureButtonTitle: Swift::String?
+  public var captureHeaderImage: UIKit::UIImage?
+  public var uploadTitle: Swift::String?
+  public var uploadDescriptionText: Swift::String?
+  public var uploadSteps: [Swift::String]?
+  public var uploadButtonTitle: Swift::String?
+  public var uploadHeaderImage: UIKit::UIImage?
+  public init(enabled: Swift::Bool = true, captureTitle: Swift::String? = nil, captureDescriptionText: Swift::String? = nil, captureSteps: [Swift::String]? = nil, captureButtonTitle: Swift::String? = nil, captureHeaderImage: UIKit::UIImage? = nil, uploadTitle: Swift::String? = nil, uploadDescriptionText: Swift::String? = nil, uploadSteps: [Swift::String]? = nil, uploadButtonTitle: Swift::String? = nil, uploadHeaderImage: UIKit::UIImage? = nil)
 }
-@objc @_hasMissingDesignatedInitializers open class CafSmartAuthSdk : ObjectiveC.NSObject, Swift.Encodable {
-  public var mobileToken: Swift.String
-  public var stage: CafSmartAuth.CafEnvironment
-  public var emailURL: Foundation.URL?
-  public var phoneURL: Foundation.URL?
-  public var platform: CafSmartAuth.CafSdkPlatform
-  public var settings: CafSmartAuth.CafFaceLivenessSettings
-  public var themeConfigurator: CafSmartAuth.CafThemeConfigurator?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public func verifyPolicy(personID: Swift.String, policyId: Swift.String, listener: @escaping CafSmartAuth.CafVerifyPolicyListener)
+@objc @_hasMissingDesignatedInitializers open class CafSmartAuthSdk : ObjectiveC::NSObject, Swift::Encodable {
+  public var mobileToken: Swift::String
+  public var stage: CafSmartAuth::CafEnvironment
+  public var emailURL: Foundation::URL?
+  public var phoneURL: Foundation::URL?
+  public var platform: CafSmartAuth::CafSdkPlatform
+  public var settings: CafSmartAuth::CafFaceLivenessSettings
+  public var themeConfigurator: CafSmartAuth::CafThemeConfigurator?
+  public func encode(to encoder: any Swift::Encoder) throws
+  public func verifyPolicy(personID: Swift::String, policyId: Swift::String, listener: @escaping CafSmartAuth::CafVerifyPolicyListener)
   @objc deinit
 }
-extension CafSmartAuth.CafSmartAuthSdk {
+extension CafSmartAuth::CafSmartAuthSdk {
   public class CafBuilder {
-    public init(mobileToken: Swift.String)
-    public func build() -> CafSmartAuth.CafSmartAuthSdk
-    public func setStage(_ newStage: CafSmartAuth.CafEnvironment) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
-    #if compiler(>=5.3) && $NonescapableTypes
-    public func setEmailURL(_ url: Foundation.URL?) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public func setPhoneURL(_ url: Foundation.URL?) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
-    #endif
-    public func setPlatform(_ platform: CafSmartAuth.CafSdkPlatform) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
-    public func setLivenessSettings(_ settings: CafSmartAuth.CafFaceLivenessSettings) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
-    public func setThemeConfigurator(_ configurator: CafSmartAuth.CafThemeConfigurator) -> CafSmartAuth.CafSmartAuthSdk.CafBuilder
+    public init(mobileToken: Swift::String)
+    public func build() -> CafSmartAuth::CafSmartAuthSdk
+    public func setStage(_ newStage: CafSmartAuth::CafEnvironment) -> CafSmartAuth::CafSmartAuthSdk.CafSmartAuth::CafBuilder
+    public func setEmailURL(_ url: Foundation::URL?) -> CafSmartAuth::CafSmartAuthSdk.CafSmartAuth::CafBuilder
+    public func setPhoneURL(_ url: Foundation::URL?) -> CafSmartAuth::CafSmartAuthSdk.CafSmartAuth::CafBuilder
+    public func setPlatform(_ platform: CafSmartAuth::CafSdkPlatform) -> CafSmartAuth::CafSmartAuthSdk.CafSmartAuth::CafBuilder
+    public func setLivenessSettings(_ settings: CafSmartAuth::CafFaceLivenessSettings) -> CafSmartAuth::CafSmartAuthSdk.CafSmartAuth::CafBuilder
+    public func setThemeConfigurator(_ configurator: CafSmartAuth::CafThemeConfigurator) -> CafSmartAuth::CafSmartAuthSdk.CafSmartAuth::CafBuilder
     @objc deinit
   }
 }
-@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResult : ObjectiveC.NSObject, Swift.Encodable {
-  public var isAuthorized: Swift.Bool?
-  public var attestation: Swift.String?
+@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResult : ObjectiveC::NSObject, Swift::Encodable {
+  public var isAuthorized: Swift::Bool?
+  public var attestation: Swift::String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResultError : ObjectiveC.NSObject, Swift.Encodable {
-  public var error: Swift.String
+@objc @_hasMissingDesignatedInitializers public class CafFaceAuthenticatorResultError : ObjectiveC::NSObject, Swift::Encodable {
+  public var error: Swift::String
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-public enum CafSmartAuthError : Swift.Error {
-  case PermissionReason(Swift.String)
-  case AvailabilityReason(Swift.String)
+public enum CafSmartAuthError : Swift::Error {
+  case PermissionReason(Swift::String)
+  case AvailabilityReason(Swift::String)
   case NetworkReason
-  case ServerReason(Swift.String, Swift.String)
-  case SecurityReason(Swift.String)
-  case StorageReason(Swift.String)
-  case PolicyReason(Swift.String)
-  case GetLocationReason(Swift.String)
-  case TerminateByUser(Swift.String)
+  case ServerReason(Swift::String, Swift::String)
+  case SecurityReason(Swift::String)
+  case StorageReason(Swift::String)
+  case PolicyReason(Swift::String)
+  case GetLocationReason(Swift::String)
+  case TerminateByUser(Swift::String)
 }
-extension CafSmartAuth.CafSmartAuthError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var errorDescription: Swift.String? {
+extension CafSmartAuth::CafSmartAuthError : Foundation::LocalizedError {
+  public var errorDescription: Swift::String? {
     get
   }
-  #endif
 }
-@frozen public enum CafSmartAuthResult<Success, Pending, Failure, Loading, Loaded> where Failure : Swift.Error {
+@frozen public enum CafSmartAuthResult<Success, Pending, Failure, Loading, Loaded> where Failure : Swift::Error {
   case onSuccess(Success)
   case onPending(Pending)
   case onError(Failure)
@@ -301,81 +270,77 @@ extension CafSmartAuth.CafSmartAuthError : Foundation.LocalizedError {
   case onLoaded(Loaded)
 }
 public struct CafThemeConfigurator {
-  public var lightTheme: CafSmartAuth.CafTheme
-  public var darkTheme: CafSmartAuth.CafTheme
-  public init(lightTheme: CafSmartAuth.CafTheme = CafTheme(), darkTheme: CafSmartAuth.CafTheme = CafTheme())
+  public var lightTheme: CafSmartAuth::CafTheme
+  public var darkTheme: CafSmartAuth::CafTheme
+  public init(lightTheme: CafSmartAuth::CafTheme = CafTheme(), darkTheme: CafSmartAuth::CafTheme = CafTheme())
 }
 public struct CafTheme {
-  public var backgroundColor: UIKit.UIColor
-  public var textColor: UIKit.UIColor
-  public var linkColor: UIKit.UIColor
-  public var boxBorderColor: UIKit.UIColor
-  public var boxFilledBorderColor: UIKit.UIColor
-  public var boxBackgroundColor: UIKit.UIColor
-  public var boxFilledBackgroundColor: UIKit.UIColor
-  public var boxTextColor: UIKit.UIColor
-  public var progressColor: UIKit.UIColor
-  public init(backgroundColor: Swift.String = "#FFFFFF", textColor: Swift.String = "#FF000000", linkColor: Swift.String = "#004AF7", boxBorderColor: Swift.String = "#cbcbcb", boxFilledBorderColor: Swift.String = "#004AF7", boxBackgroundColor: Swift.String = "#D3D3D3", boxFilledBackgroundColor: Swift.String = "#D3D3D3", boxTextColor: Swift.String = "#004AF7", progressColor: Swift.String = "#004AF7")
+  public var backgroundColor: UIKit::UIColor
+  public var textColor: UIKit::UIColor
+  public var linkColor: UIKit::UIColor
+  public var boxBorderColor: UIKit::UIColor
+  public var boxFilledBorderColor: UIKit::UIColor
+  public var boxBackgroundColor: UIKit::UIColor
+  public var boxFilledBackgroundColor: UIKit::UIColor
+  public var boxTextColor: UIKit::UIColor
+  public var progressColor: UIKit::UIColor
+  public init(backgroundColor: Swift::String = "#FFFFFF", textColor: Swift::String = "#FF000000", linkColor: Swift::String = "#004AF7", boxBorderColor: Swift::String = "#cbcbcb", boxFilledBorderColor: Swift::String = "#004AF7", boxBackgroundColor: Swift::String = "#D3D3D3", boxFilledBackgroundColor: Swift::String = "#D3D3D3", boxTextColor: Swift::String = "#004AF7", progressColor: Swift::String = "#004AF7")
 }
-@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResult : ObjectiveC.NSObject, Swift.Encodable {
-  public var isAuthorized: Swift.Bool?
-  public var attestation: Swift.String?
+@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResult : ObjectiveC::NSObject, Swift::Encodable {
+  public var isAuthorized: Swift::Bool?
+  public var attestation: Swift::String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultWithPending : ObjectiveC.NSObject, Swift.Encodable {
-  public var isAuthorized: Swift.Bool?
-  public var attestation: Swift.String?
-  public var requestId: Swift.String?
-  public var message: Swift.String?
+@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultWithPending : ObjectiveC::NSObject, Swift::Encodable {
+  public var isAuthorized: Swift::Bool?
+  public var attestation: Swift::String?
+  public var requestId: Swift::String?
+  public var message: Swift::String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultError : ObjectiveC.NSObject, Swift.Encodable {
-  public var error: Swift.String
-  public var message: Swift.String
+@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultError : ObjectiveC::NSObject, Swift::Encodable {
+  public var error: Swift::String
+  public var message: Swift::String
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultDisapproved : ObjectiveC.NSObject, Swift.Encodable {
-  public var isAuthorized: Swift.Bool?
-  public var attestation: Swift.String?
+@objc @_hasMissingDesignatedInitializers public class CafCodeAuthenticatorResultDisapproved : ObjectiveC::NSObject, Swift::Encodable {
+  public var isAuthorized: Swift::Bool?
+  public var attestation: Swift::String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-public enum CafFilterStyle : Swift.String, Swift.Encodable {
+public enum CafFilterStyle : Swift::String, Swift::Encodable {
   case natural
   case lineDrawing
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
     get
   }
 }
-public class CafFaceLivenessSettings : Swift.Encodable {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(faceLivenessToken: Swift.String, useLoadingScreen: Swift.Bool? = nil, filter: CafSmartAuth.CafFilterStyle? = nil)
-  #endif
+public class CafFaceLivenessSettings : Swift::Encodable {
+  public init(faceLivenessToken: Swift::String, useLoadingScreen: Swift::Bool? = nil, filter: CafSmartAuth::CafFilterStyle? = nil)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-extension CafSmartAuth.CafLogLevel : Swift.Equatable {}
-extension CafSmartAuth.CafLogLevel : Swift.Hashable {}
-extension CafSmartAuth.CafLogLevel : Swift.RawRepresentable {}
-extension CafSmartAuth.CafEnvironment : Swift.Equatable {}
-extension CafSmartAuth.CafEnvironment : Swift.Hashable {}
-extension CafSmartAuth.CafEnvironment : Swift.RawRepresentable {}
-extension CafSmartAuth.CafSdkPlatform : Swift.Equatable {}
-extension CafSmartAuth.CafSdkPlatform : Swift.Hashable {}
-extension CafSmartAuth.CafSdkPlatform : Swift.RawRepresentable {}
-extension CafSmartAuth.CafErrorType : Swift.Equatable {}
-extension CafSmartAuth.CafErrorType : Swift.Hashable {}
-extension CafSmartAuth.CafErrorType : Swift.RawRepresentable {}
-extension CafSmartAuth.CafFailureType : Swift.Equatable {}
-extension CafSmartAuth.CafFailureType : Swift.Hashable {}
-extension CafSmartAuth.CafFailureType : Swift.RawRepresentable {}
-extension CafSmartAuth.CafFilterStyle : Swift.Equatable {}
-extension CafSmartAuth.CafFilterStyle : Swift.Hashable {}
-extension CafSmartAuth.CafFilterStyle : Swift.RawRepresentable {}
+extension CafSmartAuth::CafLogLevel : Swift::Equatable {}
+extension CafSmartAuth::CafLogLevel : Swift::Hashable {}
+extension CafSmartAuth::CafLogLevel : Swift::RawRepresentable {}
+extension CafSmartAuth::CafEnvironment : Swift::Equatable {}
+extension CafSmartAuth::CafEnvironment : Swift::Hashable {}
+extension CafSmartAuth::CafEnvironment : Swift::RawRepresentable {}
+extension CafSmartAuth::CafSdkPlatform : Swift::Equatable {}
+extension CafSmartAuth::CafSdkPlatform : Swift::Hashable {}
+extension CafSmartAuth::CafSdkPlatform : Swift::RawRepresentable {}
+extension CafSmartAuth::CafErrorType : Swift::Equatable {}
+extension CafSmartAuth::CafErrorType : Swift::Hashable {}
+extension CafSmartAuth::CafErrorType : Swift::RawRepresentable {}
+extension CafSmartAuth::CafFailureType : Swift::Equatable {}
+extension CafSmartAuth::CafFailureType : Swift::Hashable {}
+extension CafSmartAuth::CafFailureType : Swift::RawRepresentable {}
+extension CafSmartAuth::CafFilterStyle : Swift::Equatable {}
+extension CafSmartAuth::CafFilterStyle : Swift::Hashable {}
+extension CafSmartAuth::CafFilterStyle : Swift::RawRepresentable {}
